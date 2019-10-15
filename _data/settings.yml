@@ -12,7 +12,7 @@ menu:
 - {name: '취미', folder: 'pages', file: 'sample-posts.html'}
 - {name: '놀기', folder: 'pages', file: 'documentation.html'}
 - {name: '지식', folder: 'pages', file: 'about.html'}
-- {name: 'who'', folder: 'pages', file: 'contact.html'}
+- {name: 'who', folder: 'pages', file: 'contact.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
