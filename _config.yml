@@ -13,11 +13,11 @@ sass:
   sass_dir: assets/css
   style: :nested
 
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           "Millennial"
-description:	       "a Jekyll theme for running a blog or publication"
-author:              "Paul Le"
+# Customize atom feed settings (this is where Jekyll-Feed gets configuration information)
+title:		           "LivlyBear"
+description:	       "a Jekyll theme for running a blog"
+author:              "JIWAN YE"
 
-# RSS 2.0 can be used instead of Atom by uncommenting following two lines
+# RSS 2.0 can be used instead of Atom by uncomment following two lines
 #feed:
 #  path: rss-feed.xml

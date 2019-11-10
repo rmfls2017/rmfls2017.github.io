@@ -49,7 +49,7 @@ layout: default
     {% assign listed_posts_urls = page.url | split: ' ' %}
     <ul class="related-posts">
       {% for tag in page.tags %}
-        {% for mypost in site.tags[tag] limit:2 %}
+        {% for mypost in site.tags[tag] limit:3 %}
           {% if listed_posts_urls contains mypost.url %}
           {% else %}
             <li>
@@ -57,7 +57,7 @@ layout: default
                 <a href="{{ site.github.url }}{{ mypost.url }}">
                   <div class="related-thumbnail">
                     {% if mypost.image %}
-                      <img src="{{ site.url }}{{ site.baseurl }}/assets/img/{{ mypost.image }}">
+                      <img src="/assets/img/{{ mypost.image }}">
                     {% endif %}
                   </div>
                   <div class="related-title">
