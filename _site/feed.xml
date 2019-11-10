@@ -1,4 +1,961 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-15T03:07:54+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Millennial</title><subtitle>a Jekyll theme for running a blog or publication</subtitle><author><name>Paul Le</name></author><entry><title type="html">Welcome to Millennial!</title><link href="http://localhost:4000/documentation/welcome-to-millennial.html" rel="alternate" type="text/html" title="Welcome to Millennial!" /><published>2017-01-01T00:00:00+00:00</published><updated>2017-01-01T00:00:00+00:00</updated><id>http://localhost:4000/documentation/welcome-to-millennial</id><content type="html" xml:base="http://localhost:4000/documentation/welcome-to-millennial.html">&lt;p&gt;Millennial is a minimalist Jekyll theme. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog. Below you can find everything you need to get started.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-10T12:38:02+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">LivlyBear</title><subtitle>a Jekyll theme for running a blog</subtitle><author><name>JIWAN YE</name></author><entry><title type="html">2019.11.04 - Interview (Junior Backend Developer Position)</title><link href="http://localhost:4000/interviews/interview-6.html" rel="alternate" type="text/html" title="2019.11.04 - Interview (Junior Backend Developer Position)" /><published>2019-11-04T00:00:00+00:00</published><updated>2019-11-04T00:00:00+00:00</updated><id>http://localhost:4000/interviews/interview-6</id><content type="html" xml:base="http://localhost:4000/interviews/interview-6.html">&lt;h2 id=&quot;면접-진행-복기&quot;&gt;면접 진행 복기&lt;/h2&gt;
+
+&lt;p&gt;지원한 분야는 백엔드 개발자로 지원한 사내에서는 PHP 에서 Python 으로 리펙토링을 진행중이었던 상황&lt;/p&gt;
+
+&lt;h3 id=&quot;순서&quot;&gt;순서&lt;/h3&gt;
+
+&lt;p&gt;먼저 순서에 앞서 &lt;strong&gt;설문지&lt;/strong&gt;를 작성 -&amp;gt; 회사의 비전과 가치에 대해 서술식으로 작성 (답이 정해진 것이 아닌 자신의 생각을 적어내는 설문) -&amp;gt; 작성이후 면접실 입성 -&amp;gt; 자기소개 후 면접 진행&lt;/p&gt;
+
+&lt;p&gt;설문 작성 포함하여 총 면접시간: &lt;strong&gt;1h 30m&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;회사에서 진행한 프로젝트 설명&lt;/p&gt;
+
+    &lt;p&gt;전 직장에서 사용한 기술 스택에 대하여:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;php 레거시 코드에서 코드 리펙토링과 신규 플랫폼을 위해 새로운 서버 구성과 신규 프로젝트에서의 기술을 도입한 취지&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;의견 수렴에 있어서 어떻게 진행을 했는지&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;의견 수렴 과정 중 팀 내에서 다른 의견을 생각한 부분이 있는지
+        &lt;ul&gt;
+          &lt;li&gt;프레임워크를 도입하면서 다른 방향으로 생각을 했는지&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;팀에서 신기술 개발시 어떻게 진행을 했는지&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 기존에 운영하던 플랫폼에서는 Composer 나 Dependency 의 문제를 해결할 수 없는 상황이였으며 패키지별로 관리가 아닌 하나의 공통된 라이브러리와 그 공통된 라이브러리를 전체적으로 Include 하는 형식으로 개발이 되었고, 그 부분을 신규 플랫폼으로 개발하게 되면서 Symfony Framework 도입, Composer의 도입, GIT 을 통해 소스관리를 진행
+
+ * 또한 서버구성에 있어서도 클라이언트와 관리자의 페이지를 따로 분리를 해놓지않은 기존과 달리 분리하여 클라이언트측에서 유추할 수 없게 진행하고자 하는 목표를 가짐
+
+ * 하나의 관리자 서버, 하나의 클라이언트 서버, 두개의 서버가 하나의 DB 를 바라보는 형식으로 구성
+
+ * 추가적으로 Elasticsearch, Logstash, Kibana 를 통해 데이터를 시각화하는데 사용 (3번 질문으로 확장)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;프로젝트에서 사용한 기술에 대해 설명&lt;/p&gt;
+
+    &lt;p&gt;첫 직장과 이직한 곳에서의 차이점:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;이직을 하게되면서 다른 언어로 갈아타게 됐는데 어떠했는지&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;p&gt;사용했던 다른 언어의 특징을 말한다면? (Typescript vs Javascript) - Nodejs 사용&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;첫 직장에서 사용했던 언어와 비교를 한다면? (PHP vs Typescript, Javascript)&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * Javascript 의 경우 느슨한 타입으로 인해 장점이자 단점으로 작용할 수 있는 부분을 Typescript 는 강제함으로써 언어를 사용하는 입장에서 잘못된 파라미터 혹은 결과값을 미리 확인할 수 있음
+
+ * PHP 와 Typescript 간 언어적 차이는 많이 존재하지 않다고 생각. 하지만 현재 개발되는 생태계를 생각하면 현재 Typescript 의 생태계가 좀 더 활발하게 진행되고 있다고 생각
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;추가질문:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;테스트 코드를 작성해보았는가? - YES&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;그렇다면 테스트 코드를 진행함으로 좋은점은 무엇이라고 생각하는가?&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;추가질문 답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 하나의 기능을 여러가지 논리적인 구조로 분리하여 생각하고 예측할 수 있다는 것에 빠르고 정확하게 개발가능할 수 있다고 생각을 함
+
+ * 하지만 너무 많은 것으로 분리하여 테스트를 하다보면 개발속도의 저하 혹은 오직 테스트를 위한 코드를 만들게 됨으로 실제적으로 진행해야하는 코드의 본질적인 내용을 간과할 수 있다고 생각함
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;기술에 대해 약간의 질문과 답&lt;/p&gt;
+
+    &lt;p&gt;1번의 답변 중 추가적인 질문이 이루어짐&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;답변 중 elasticsearch 를 사용하였다고 해서 질문&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;p&gt;클러스터를 구성해보았는가?&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;샤드(shard)에 대해서 설명을 해줄 수 있나?&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;ELK 서버는 어떻게 구성을 하였는가?&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 기존에 가이드를 통해서 설치를 진행을 하였고 logstash, elasticsearch, kibana 를 하나의 서버로 만들어 설치 (logstash를 별도의 서버로 분리하지 않음)
+
+ * Pipeline 을 통해서 데이터를 가져오고 내부 IP 를 통해서 서로 데이터를 통신함
+
+ * 클러스터를 구성해보지 않았고 샤드에 대해서는 답변하지 못함
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;주어진 문제의 가정과 그에 대한 해결책&lt;/p&gt;
+
+    &lt;p&gt;문제해결에 대한 능력을 파악하기 위한 질문 (작성자 생각)&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;현재 서버를 가동중에 있으며 1-5번 까지의 서버가 있다. 운영하는 서버 중 1번의 서버에 트래픽이 몰리게 되었으며 수 만건의 Request 가 발생하였다. 1번 서버에 집중되는 Request 를 유후중인 2-5번 서버에 배분을 해주기 위해서는 어떻게 하여야 하는가?&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;운영중인 서버에서 개발을 위한 데이터가 필요하다. 게시판의 데이터가 필요하다는 가정하에 이러한 경우에는 어떻게 진행을 할 것인가?&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 버퍼를 통해서 해당 Request 들을 모아두었다가 각 서버에 배분을 하면 되지 않을까 (메모리 Buffer 를 통해)
+
+ * 기존에 가지고있던 데이터베이스의 Slave 를 만들어서 기존에 운영중인 데이터와 똑같은 데이터를 Slave 에서 가져와 개발을 진행하면 될 것 같다
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;추가질문:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;버퍼를 통해서 진행하게되면 Response 를 받았을 때는 어떻게 순차적으로 진행을 하게 되느냐?&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Slave 를 통해 진행하게되면 Down Time 을 가질 수 밖에 없는 상황일텐데 이 시간을 줄이는 방법은 어떻게 진행을 하면 되는지 알려줄 수 있느냐?&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;추가질문 답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * Response 에 대해서 순차적으로 진행할 수 있는 방법에 대해서는 답변하지 못함
+
+ * Down Time 을 줄일 수 있는 방법에 대해서는 답변하지 못함
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;이직 준비하면서 한 달 간의 기간 동안 무엇을 하였는지 (9월에 퇴사 이후 한 달의 기간 공복이 있음. 글 작성일 기준)&lt;/p&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 주 단위로 답을 했으며 1주차 회사에서 경영악화로 인한 퇴사의 충격을 추스리고 친구를 만남
+
+ * 2주차에서 부터는 회사에서 궁금했던 언어나 관심사에 대해서 자료를 찾고 서점을 자주 방문
+
+ * 머신러닝과 딥러닝에 대한 자료를 찾아보고 공부를 진행 (이 부분에서 머신러닝과 딥러닝의 차이에 대해 질문을 했으나 답변을 못함)
+
+ * 파이썬 토이 프로젝트로 Django 를 통해 Restful API 를 구현함 (Django REST Framework 사용 안함)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;회사 이직 시 어떠한 이유로 인해서 이직을 하게 되는지&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;월급 미지급 및 경영악화의 문제(Critical 한 문제)가 아닌 다른 이유에서의 이직을 하게 된다면?&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 다른분야에 도전하고 싶은 생각이 든다면 이직을 고려할 생각이 있을 것 같다고 답변
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;인사팀에서의 질문&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;회사를 결정하는데에 있어서 어떤 부분이 작용하게 되는가?&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 회사의 비전 및 비지니스 모델에 대해서 첫번째로 관심을 가지고 두번째로 개발자들의 개발환경에 대해서 고려한다
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;회사 블로그나 근무 환경에 대해서는 어떻게 생각하는가? (자유롭고 시끌벅적한 분위기가 아닌 조용하고 일에 집중을 하는 분위기)&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 일을 진행할 때는 이러한 분위기가 더 좋다고 생각한다. 회의를 진행하거나 의견을 피력할 수 있는 부분에 대해서는 충분한 의사소통이 필요하고 그 또한 좋다고 생각을 하지만 업무의 진행에 있어서는 집중을 할 수 있는 조용한 분위기가 좋다고 생각한다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;팀에 어떤한 분이 리더가 되면 좋겠다고 생각하는가?&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 여러 사람과의 의견을 들어줄 수 있는 분이 리더로 되면 좋을 것 같다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;회사의 지원하게된 계기는 어떠한 것이 있는가?&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 대표가 적극적이고 회사에 대한 애정이 많아 보인다. 인터넷 블로그나 경험담을 적은 글들을 보면 그러한 생각이 잘 나타나 있고, 개인적인 생각으로 비지니스 모델을 통한 회사의 발전 가능성이 높이 평가된다고 생각한다
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;회사에서 출품한 제품을 사용한 적이 있는가? (모바일 어플리케이션)&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 사용한 적 있다. 개선할 사항이라던가 새롭게 생겼으면 좋을만한 기능을 말함.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;현재 읽고 있는 책이 있다면 어떤것에 관한 서적인가?&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * '코딩 인터뷰' 라는 책으로 면접을 준비하면서 어떠한 코딩 지식을 가져야하는지 알려주는 책이며 추가적인 개념을 설명해주고 있다
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;느낀점&quot;&gt;느낀점&lt;/h3&gt;
+
+&lt;p&gt;타 회사에서의 면접과는 다른 느낌의 면접이였다.&lt;/p&gt;
+
+&lt;p&gt;설문 작성을 시작으로 작성 후 면접을 진행했다. 기본 스타일의 면접이 진행되었고 내가 그 동안 거만한 생각을 버리고 완전히 다른 자세로 임한 면접이었다.&lt;/p&gt;
+
+&lt;p&gt;아쉽게도 서버쪽에 많은 부분 답변을 제대로 하지 못하게되어 좀 아쉽긴하지만…&lt;/p&gt;
+
+&lt;h3 id=&quot;총평&quot;&gt;총평&lt;/h3&gt;
+
+&lt;p&gt;내 스스로가 생각한 면접과 거의 흡사한 분위기와 절차였다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;추가글&quot;&gt;추가글&lt;/h3&gt;
+
+&lt;p&gt;2019.11.07 - 결과 통보&lt;/p&gt;
+
+&lt;p&gt;탈락.&lt;/p&gt;
+
+&lt;p&gt;하지만 다른 회사에서 단순히 탈락 연락만 주는 것과 다르게 &lt;code class=&quot;highlighter-rouge&quot;&gt;어떤면에서는 좋았지만 어떤면에서는 부족해서 탈락하게 되었다&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;라고 피드백을 전해주었다.&lt;/p&gt;
+
+&lt;p&gt;엄청 고맙지않은가…&lt;/p&gt;
+
+&lt;p&gt;내가 어떠한 부분에서 부족하여 탈락을 결정하게 됐는지, 이 말은 곧 그러한 부분을 더 공부하여 쌓아가면 될 것이다.&lt;/p&gt;
+
+&lt;p&gt;끝으로 그 회사에 발전과 영광이 있도록 🤞&lt;/p&gt;</content><author><name>JIWAN YE</name></author><category term="interviews" /><summary type="html">면접 진행 복기 지원한 분야는 백엔드 개발자로 지원한 사내에서는 PHP 에서 Python 으로 리펙토링을 진행중이었던 상황 순서 먼저 순서에 앞서 설문지를 작성 -&amp;gt; 회사의 비전과 가치에 대해 서술식으로 작성 (답이 정해진 것이 아닌 자신의 생각을 적어내는 설문) -&amp;gt; 작성이후 면접실 입성 -&amp;gt; 자기소개 후 면접 진행 설문 작성 포함하여 총 면접시간: 1h 30m 회사에서 진행한 프로젝트 설명 전 직장에서 사용한 기술 스택에 대하여: php 레거시 코드에서 코드 리펙토링과 신규 플랫폼을 위해 새로운 서버 구성과 신규 프로젝트에서의 기술을 도입한 취지 의견 수렴에 있어서 어떻게 진행을 했는지 의견 수렴 과정 중 팀 내에서 다른 의견을 생각한 부분이 있는지 프레임워크를 도입하면서 다른 방향으로 생각을 했는지 팀에서 신기술 개발시 어떻게 진행을 했는지 답변: * 기존에 운영하던 플랫폼에서는 Composer 나 Dependency 의 문제를 해결할 수 없는 상황이였으며 패키지별로 관리가 아닌 하나의 공통된 라이브러리와 그 공통된 라이브러리를 전체적으로 Include 하는 형식으로 개발이 되었고, 그 부분을 신규 플랫폼으로 개발하게 되면서 Symfony Framework 도입, Composer의 도입, GIT 을 통해 소스관리를 진행 * 또한 서버구성에 있어서도 클라이언트와 관리자의 페이지를 따로 분리를 해놓지않은 기존과 달리 분리하여 클라이언트측에서 유추할 수 없게 진행하고자 하는 목표를 가짐 * 하나의 관리자 서버, 하나의 클라이언트 서버, 두개의 서버가 하나의 DB 를 바라보는 형식으로 구성 * 추가적으로 Elasticsearch, Logstash, Kibana 를 통해 데이터를 시각화하는데 사용 (3번 질문으로 확장) 프로젝트에서 사용한 기술에 대해 설명 첫 직장과 이직한 곳에서의 차이점: 이직을 하게되면서 다른 언어로 갈아타게 됐는데 어떠했는지 사용했던 다른 언어의 특징을 말한다면? (Typescript vs Javascript) - Nodejs 사용 첫 직장에서 사용했던 언어와 비교를 한다면? (PHP vs Typescript, Javascript) 답변: * Javascript 의 경우 느슨한 타입으로 인해 장점이자 단점으로 작용할 수 있는 부분을 Typescript 는 강제함으로써 언어를 사용하는 입장에서 잘못된 파라미터 혹은 결과값을 미리 확인할 수 있음 * PHP 와 Typescript 간 언어적 차이는 많이 존재하지 않다고 생각. 하지만 현재 개발되는 생태계를 생각하면 현재 Typescript 의 생태계가 좀 더 활발하게 진행되고 있다고 생각 추가질문: 테스트 코드를 작성해보았는가? - YES 그렇다면 테스트 코드를 진행함으로 좋은점은 무엇이라고 생각하는가? 추가질문 답변: * 하나의 기능을 여러가지 논리적인 구조로 분리하여 생각하고 예측할 수 있다는 것에 빠르고 정확하게 개발가능할 수 있다고 생각을 함 * 하지만 너무 많은 것으로 분리하여 테스트를 하다보면 개발속도의 저하 혹은 오직 테스트를 위한 코드를 만들게 됨으로 실제적으로 진행해야하는 코드의 본질적인 내용을 간과할 수 있다고 생각함 기술에 대해 약간의 질문과 답 1번의 답변 중 추가적인 질문이 이루어짐 답변 중 elasticsearch 를 사용하였다고 해서 질문 클러스터를 구성해보았는가? 샤드(shard)에 대해서 설명을 해줄 수 있나? ELK 서버는 어떻게 구성을 하였는가? 답변: * 기존에 가이드를 통해서 설치를 진행을 하였고 logstash, elasticsearch, kibana 를 하나의 서버로 만들어 설치 (logstash를 별도의 서버로 분리하지 않음) * Pipeline 을 통해서 데이터를 가져오고 내부 IP 를 통해서 서로 데이터를 통신함 * 클러스터를 구성해보지 않았고 샤드에 대해서는 답변하지 못함 주어진 문제의 가정과 그에 대한 해결책 문제해결에 대한 능력을 파악하기 위한 질문 (작성자 생각) 현재 서버를 가동중에 있으며 1-5번 까지의 서버가 있다. 운영하는 서버 중 1번의 서버에 트래픽이 몰리게 되었으며 수 만건의 Request 가 발생하였다. 1번 서버에 집중되는 Request 를 유후중인 2-5번 서버에 배분을 해주기 위해서는 어떻게 하여야 하는가? 운영중인 서버에서 개발을 위한 데이터가 필요하다. 게시판의 데이터가 필요하다는 가정하에 이러한 경우에는 어떻게 진행을 할 것인가? 답변: * 버퍼를 통해서 해당 Request 들을 모아두었다가 각 서버에 배분을 하면 되지 않을까 (메모리 Buffer 를 통해) * 기존에 가지고있던 데이터베이스의 Slave 를 만들어서 기존에 운영중인 데이터와 똑같은 데이터를 Slave 에서 가져와 개발을 진행하면 될 것 같다 추가질문: 버퍼를 통해서 진행하게되면 Response 를 받았을 때는 어떻게 순차적으로 진행을 하게 되느냐? Slave 를 통해 진행하게되면 Down Time 을 가질 수 밖에 없는 상황일텐데 이 시간을 줄이는 방법은 어떻게 진행을 하면 되는지 알려줄 수 있느냐? 추가질문 답변: * Response 에 대해서 순차적으로 진행할 수 있는 방법에 대해서는 답변하지 못함 * Down Time 을 줄일 수 있는 방법에 대해서는 답변하지 못함 이직 준비하면서 한 달 간의 기간 동안 무엇을 하였는지 (9월에 퇴사 이후 한 달의 기간 공복이 있음. 글 작성일 기준) 답변: * 주 단위로 답을 했으며 1주차 회사에서 경영악화로 인한 퇴사의 충격을 추스리고 친구를 만남 * 2주차에서 부터는 회사에서 궁금했던 언어나 관심사에 대해서 자료를 찾고 서점을 자주 방문 * 머신러닝과 딥러닝에 대한 자료를 찾아보고 공부를 진행 (이 부분에서 머신러닝과 딥러닝의 차이에 대해 질문을 했으나 답변을 못함) * 파이썬 토이 프로젝트로 Django 를 통해 Restful API 를 구현함 (Django REST Framework 사용 안함) 회사 이직 시 어떠한 이유로 인해서 이직을 하게 되는지 월급 미지급 및 경영악화의 문제(Critical 한 문제)가 아닌 다른 이유에서의 이직을 하게 된다면? 답변: * 다른분야에 도전하고 싶은 생각이 든다면 이직을 고려할 생각이 있을 것 같다고 답변 인사팀에서의 질문 회사를 결정하는데에 있어서 어떤 부분이 작용하게 되는가? 답변: * 회사의 비전 및 비지니스 모델에 대해서 첫번째로 관심을 가지고 두번째로 개발자들의 개발환경에 대해서 고려한다 회사 블로그나 근무 환경에 대해서는 어떻게 생각하는가? (자유롭고 시끌벅적한 분위기가 아닌 조용하고 일에 집중을 하는 분위기) 답변: * 일을 진행할 때는 이러한 분위기가 더 좋다고 생각한다. 회의를 진행하거나 의견을 피력할 수 있는 부분에 대해서는 충분한 의사소통이 필요하고 그 또한 좋다고 생각을 하지만 업무의 진행에 있어서는 집중을 할 수 있는 조용한 분위기가 좋다고 생각한다. 팀에 어떤한 분이 리더가 되면 좋겠다고 생각하는가? 답변: * 여러 사람과의 의견을 들어줄 수 있는 분이 리더로 되면 좋을 것 같다. 회사의 지원하게된 계기는 어떠한 것이 있는가? 답변: * 대표가 적극적이고 회사에 대한 애정이 많아 보인다. 인터넷 블로그나 경험담을 적은 글들을 보면 그러한 생각이 잘 나타나 있고, 개인적인 생각으로 비지니스 모델을 통한 회사의 발전 가능성이 높이 평가된다고 생각한다 회사에서 출품한 제품을 사용한 적이 있는가? (모바일 어플리케이션) 답변: * 사용한 적 있다. 개선할 사항이라던가 새롭게 생겼으면 좋을만한 기능을 말함. 현재 읽고 있는 책이 있다면 어떤것에 관한 서적인가? 답변: * '코딩 인터뷰' 라는 책으로 면접을 준비하면서 어떠한 코딩 지식을 가져야하는지 알려주는 책이며 추가적인 개념을 설명해주고 있다 느낀점 타 회사에서의 면접과는 다른 느낌의 면접이였다. 설문 작성을 시작으로 작성 후 면접을 진행했다. 기본 스타일의 면접이 진행되었고 내가 그 동안 거만한 생각을 버리고 완전히 다른 자세로 임한 면접이었다. 아쉽게도 서버쪽에 많은 부분 답변을 제대로 하지 못하게되어 좀 아쉽긴하지만… 총평 내 스스로가 생각한 면접과 거의 흡사한 분위기와 절차였다. 추가글 2019.11.07 - 결과 통보 탈락. 하지만 다른 회사에서 단순히 탈락 연락만 주는 것과 다르게 어떤면에서는 좋았지만 어떤면에서는 부족해서 탈락하게 되었다 라고 피드백을 전해주었다. 엄청 고맙지않은가… 내가 어떠한 부분에서 부족하여 탈락을 결정하게 됐는지, 이 말은 곧 그러한 부분을 더 공부하여 쌓아가면 될 것이다. 끝으로 그 회사에 발전과 영광이 있도록 🤞</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/interview-vector-image.jpg" /></entry><entry><title type="html">2019.10.29 - Interview (Product Manager)</title><link href="http://localhost:4000/interviews/interview-5.html" rel="alternate" type="text/html" title="2019.10.29 - Interview (Product Manager)" /><published>2019-10-29T00:00:00+00:00</published><updated>2019-10-29T00:00:00+00:00</updated><id>http://localhost:4000/interviews/interview-5</id><content type="html" xml:base="http://localhost:4000/interviews/interview-5.html">&lt;h2 id=&quot;면접-진행-복기&quot;&gt;면접 진행 복기&lt;/h2&gt;
+
+&lt;p&gt;플랫폼 운영 지원 업무 포지션으로 지원&lt;/p&gt;
+
+&lt;p&gt;개발자 포지션이 아닌 다른 포지션으로 지원한 경우와 파견업체를 통해서 면접보게 된 첫번째 경우&lt;/p&gt;
+
+&lt;p&gt;총 면접시간: &lt;strong&gt;30h&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;순서&quot;&gt;순서&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;이력서에 대한 질의응답&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;개발쪽에서 다른 분야로 넘어온 계기&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;사내에서 있었던 문제에 대해 해결방안&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;자신의 성격묘사&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 새로운 분야로 한번 도전해보고 싶고 플랫폼 개발에 있어서 개발뿐만 아니라 운영쪽으로도 지식을 쌓고 싶었던 이유
+
+ * 직장 상사와의 의견차이에 있어서 대안에 대해 얘기를 하다 상사의 의견을 우선적으로 듣고 그 후에 다른 기회가 생기면 그 때 다시 말하도록 함
+
+ * 하나에 빠지면 이해가 될 때 까지 문제를 해결하고자 함, 이러한 이유로 하나에 신경을 오래 쓰게될 경우가 생겨서 일이 끝났을 때는 마무리가 잘 되지만 마무리가 완벽하게 되지 않을 경우 찝찝함이 남아 다른 일을 진행하더라도 계속해서 그 일에 신경이 쓰임
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;추가질문:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;상사가 의견을 표출할 때 자신이 이해가지 않는 상황이나 판단일 경우에는 따르지 않는가?&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;추가질문 답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 최대한 의견을 조율하여 맞추려고 하고 나의 의견이 반영되지 않았을 경우에는 잠시 보류했다가 답변에서 말한 것 처럼 다시 한번 말할 수 있는 기회가 생기면 그때 말하도록 함
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;그 외&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;사내에서 운영중인 사이트의 비슷한 부류 사이트 나열 (어떤점이 좋은지까지 설명)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;사이트 이용하면서 느꼈던 불편함 혹은 부가적인 내용&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 쇼핑몰에 관한 사이트였으며 여러가지 상품을 보여주는게 더 좋다고 생각 (시장에서 PC 고객보다는 모바일 유저들이 평균적으로 많으므로 모바일에서도 많은 상품을 보여주는게 하나의 상품을 중점적으로 하는 것 보다 여러 상품을 보여주는게 더 효율적일 것 같은 생각을 말함)
+
+ * 반품의 과정이 복잡하거나 사이트의 배열(레이아웃 구성)이 특유의 디자인인지는 모르겠으나 너무 분산되어 보임 -&amp;gt; 이로써 정확히 상품의 정보를 습득하기가 어렵고 가독성도 떨어진다고 생각함
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;느낀점&quot;&gt;느낀점&lt;/h3&gt;
+
+&lt;p&gt;개발자의 경력으로 가는 것이 아닌 신입으로 면접본 것과 새로운 분야에서 도전하는 뜻으로 면접을 보게되어 혹 다른분야로의 접목이 가능할 수 있을거라는 생각을 함&lt;/p&gt;
+
+&lt;h3 id=&quot;총평&quot;&gt;총평&lt;/h3&gt;
+
+&lt;p&gt;면접의 내용은 많이 어렵지않았으나 여러명의 면접자들이 많이있을 것 같은 생각이 든다.&lt;/p&gt;
+
+&lt;p&gt;면접관들도 대부분 시간보내기 식의 면접을 진행하는 것 처럼 보여 살짝 긴장감이 떨어지는 느낌을 받았다.&lt;/p&gt;</content><author><name>JIWAN YE</name></author><category term="interviews" /><summary type="html">면접 진행 복기 플랫폼 운영 지원 업무 포지션으로 지원 개발자 포지션이 아닌 다른 포지션으로 지원한 경우와 파견업체를 통해서 면접보게 된 첫번째 경우 총 면접시간: 30h 순서 이력서에 대한 질의응답 개발쪽에서 다른 분야로 넘어온 계기 사내에서 있었던 문제에 대해 해결방안 자신의 성격묘사 답변: * 새로운 분야로 한번 도전해보고 싶고 플랫폼 개발에 있어서 개발뿐만 아니라 운영쪽으로도 지식을 쌓고 싶었던 이유 * 직장 상사와의 의견차이에 있어서 대안에 대해 얘기를 하다 상사의 의견을 우선적으로 듣고 그 후에 다른 기회가 생기면 그 때 다시 말하도록 함 * 하나에 빠지면 이해가 될 때 까지 문제를 해결하고자 함, 이러한 이유로 하나에 신경을 오래 쓰게될 경우가 생겨서 일이 끝났을 때는 마무리가 잘 되지만 마무리가 완벽하게 되지 않을 경우 찝찝함이 남아 다른 일을 진행하더라도 계속해서 그 일에 신경이 쓰임 추가질문: 상사가 의견을 표출할 때 자신이 이해가지 않는 상황이나 판단일 경우에는 따르지 않는가? 추가질문 답변: * 최대한 의견을 조율하여 맞추려고 하고 나의 의견이 반영되지 않았을 경우에는 잠시 보류했다가 답변에서 말한 것 처럼 다시 한번 말할 수 있는 기회가 생기면 그때 말하도록 함 그 외 사내에서 운영중인 사이트의 비슷한 부류 사이트 나열 (어떤점이 좋은지까지 설명) 사이트 이용하면서 느꼈던 불편함 혹은 부가적인 내용 답변: * 쇼핑몰에 관한 사이트였으며 여러가지 상품을 보여주는게 더 좋다고 생각 (시장에서 PC 고객보다는 모바일 유저들이 평균적으로 많으므로 모바일에서도 많은 상품을 보여주는게 하나의 상품을 중점적으로 하는 것 보다 여러 상품을 보여주는게 더 효율적일 것 같은 생각을 말함) * 반품의 과정이 복잡하거나 사이트의 배열(레이아웃 구성)이 특유의 디자인인지는 모르겠으나 너무 분산되어 보임 -&amp;gt; 이로써 정확히 상품의 정보를 습득하기가 어렵고 가독성도 떨어진다고 생각함 느낀점 개발자의 경력으로 가는 것이 아닌 신입으로 면접본 것과 새로운 분야에서 도전하는 뜻으로 면접을 보게되어 혹 다른분야로의 접목이 가능할 수 있을거라는 생각을 함 총평 면접의 내용은 많이 어렵지않았으나 여러명의 면접자들이 많이있을 것 같은 생각이 든다. 면접관들도 대부분 시간보내기 식의 면접을 진행하는 것 처럼 보여 살짝 긴장감이 떨어지는 느낌을 받았다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/interview-vector-image.jpg" /></entry><entry><title type="html">2019.10.28 - Interview (Junior Server Developer)</title><link href="http://localhost:4000/interviews/interview-4.html" rel="alternate" type="text/html" title="2019.10.28 - Interview (Junior Server Developer)" /><published>2019-10-28T00:00:00+00:00</published><updated>2019-10-28T00:00:00+00:00</updated><id>http://localhost:4000/interviews/interview-4</id><content type="html" xml:base="http://localhost:4000/interviews/interview-4.html">&lt;h2 id=&quot;면접-진행-복기&quot;&gt;면접 진행 복기&lt;/h2&gt;
+
+&lt;p&gt;사내 백엔드 개발자 포지션에 지원&lt;/p&gt;
+
+&lt;h3 id=&quot;순서&quot;&gt;순서&lt;/h3&gt;
+
+&lt;p&gt;처음으로 알고리즘 관련한 내용의 면접을 보았다&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.hackerrank.com/home&quot;&gt;Hackerrank&lt;/a&gt; 라는 사이트를 처음으로 알게되었고 여기에서 회사에서 선정한 문제를 푸는 형식이였다.&lt;/p&gt;
+
+&lt;p&gt;제한시간: &lt;strong&gt;2h&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;(), {}, [] 의 짝이 맞는지 체크하는 알고리즘을 구현&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;2개의 특정 단어 사이에 있는 단어(char)를 고르고 그 단어의 인덱스를 출력&lt;/p&gt;
+
+    &lt;p&gt;ex) programmer 라는 2개의 단어가 있는데 이 사이에 끼어있는 철자 인덱스를 출력&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;문제이해 못함&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;기억나지 않음&lt;/p&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 1. Stack 구조를 사용하여 괄호의 순서나 혹은 짝이 맞는지 체크 (구조는 생각했으나 구현 못함)
+
+ 2. Hashtable 을 이용하여 각 철자 당 몇 개의 값들이 필요한지 체크 후 해당 값들이 0이 되면 (모든 수가 0 이하로 떨어져야함) 해당 단어 이후로는 다시 단어가 반복되는지 체크 (구조는 생각했으나 구현 못함)
+
+ 3. X
+
+ 4. X
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;느낀점&quot;&gt;느낀점&lt;/h3&gt;
+
+&lt;p&gt;이러한 알고리즘 관련된 문제와 영어로 된 문제를 접한 기회가 되었다.&lt;/p&gt;
+
+&lt;p&gt;자료구조, 알고리즘 공부를 한다고해서 잘 할 수 있는 문제가 아니라 기본적으로 사고능력을 체크할 수 있는 기회가 되었다.&lt;/p&gt;
+
+&lt;p&gt;하지만 이번에도 제대로 해내지못해 많이 아쉽고 또 열심히 공부해야하겠다는 다시 한번 깨닫게 되었다.&lt;/p&gt;
+
+&lt;p&gt;과연 공부만으로 잘 해낼 수 있을지는 나에게 달려있는 문제라고 생각한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;총평&quot;&gt;총평&lt;/h3&gt;
+
+&lt;p&gt;알고리즘의 문제를 접할 수 있는 기회가 있었고 이러한 문제를 통해 기본 소양을 체크할 수 있는 기회가 있었고 Hackkerrank 라는 좋은 사이트를 알게되었다.&lt;/p&gt;</content><author><name>JIWAN YE</name></author><category term="interviews" /><summary type="html">면접 진행 복기 사내 백엔드 개발자 포지션에 지원 순서 처음으로 알고리즘 관련한 내용의 면접을 보았다 Hackerrank 라는 사이트를 처음으로 알게되었고 여기에서 회사에서 선정한 문제를 푸는 형식이였다. 제한시간: 2h (), {}, [] 의 짝이 맞는지 체크하는 알고리즘을 구현 2개의 특정 단어 사이에 있는 단어(char)를 고르고 그 단어의 인덱스를 출력 ex) programmer 라는 2개의 단어가 있는데 이 사이에 끼어있는 철자 인덱스를 출력 문제이해 못함 기억나지 않음 답변: 1. Stack 구조를 사용하여 괄호의 순서나 혹은 짝이 맞는지 체크 (구조는 생각했으나 구현 못함) 2. Hashtable 을 이용하여 각 철자 당 몇 개의 값들이 필요한지 체크 후 해당 값들이 0이 되면 (모든 수가 0 이하로 떨어져야함) 해당 단어 이후로는 다시 단어가 반복되는지 체크 (구조는 생각했으나 구현 못함) 3. X 4. X 느낀점 이러한 알고리즘 관련된 문제와 영어로 된 문제를 접한 기회가 되었다. 자료구조, 알고리즘 공부를 한다고해서 잘 할 수 있는 문제가 아니라 기본적으로 사고능력을 체크할 수 있는 기회가 되었다. 하지만 이번에도 제대로 해내지못해 많이 아쉽고 또 열심히 공부해야하겠다는 다시 한번 깨닫게 되었다. 과연 공부만으로 잘 해낼 수 있을지는 나에게 달려있는 문제라고 생각한다. 총평 알고리즘의 문제를 접할 수 있는 기회가 있었고 이러한 문제를 통해 기본 소양을 체크할 수 있는 기회가 있었고 Hackkerrank 라는 좋은 사이트를 알게되었다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/interview-vector-image.jpg" /></entry><entry><title type="html">Grammar of python</title><link href="http://localhost:4000/develops/python-grammer.html" rel="alternate" type="text/html" title="Grammar of python" /><published>2019-10-15T00:00:00+00:00</published><updated>2019-10-15T00:00:00+00:00</updated><id>http://localhost:4000/develops/python-grammer</id><content type="html" xml:base="http://localhost:4000/develops/python-grammer.html">&lt;p&gt;Hello world!&lt;/p&gt;</content><author><name>JIWAN YE</name></author><category term="sample" /><summary type="html">Hello world!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/cuba-4.jpg" /></entry><entry><title type="html">2019.10.11 - Interview (Python Backend Position)</title><link href="http://localhost:4000/interviews/interview-3.html" rel="alternate" type="text/html" title="2019.10.11 - Interview (Python Backend Position)" /><published>2019-10-11T00:00:00+00:00</published><updated>2019-10-11T00:00:00+00:00</updated><id>http://localhost:4000/interviews/interview-3</id><content type="html" xml:base="http://localhost:4000/interviews/interview-3.html">&lt;p&gt;29cm&lt;/p&gt;
+
+&lt;h2 id=&quot;면접-진행-복기&quot;&gt;면접 진행 복기&lt;/h2&gt;
+
+&lt;p&gt;python 을 주 언어로 사용하는 백엔드 개발자 포지션으로 지원&lt;/p&gt;
+
+&lt;h3 id=&quot;순서&quot;&gt;순서&lt;/h3&gt;
+
+&lt;p&gt;면접 진행하기에 앞서 선행 과제를 내줌&lt;/p&gt;
+
+&lt;p&gt;과제내용은 python 웹 프레임워크인 Django 로 RESTful API 구현 (제한사항: Django REST Framework 사용금지)&lt;/p&gt;
+
+&lt;p&gt;데드라인은 10월 4일까지&lt;/p&gt;
+
+&lt;p&gt;총 면접시간: &lt;strong&gt;40m&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;프로젝트 (제출한 과제를 토대로 코드리뷰 진행)&lt;/p&gt;
+
+    &lt;p&gt;면접 들어가기에 앞서 python, django 의 이해도(숙련도)는 많은 얘기를 하지 않겠다고 먼저 언급&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;외래키에 대해서 default 값을 null 로 잡아놓은 이유는 무엇인가&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;외래키의 특성중 Cascade 란 특성을 설정했는데 이에 대해서 설명&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;view 단 클래스 작성시 데코레이터를 사용한 이유는 무엇인가&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;CRUD 작성 시 레코드 삭제를 하게되면 물리적 삭제가 큰 문제가 없는가&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 기존에 주어진 데이터모델링을 바탕으로 sqlite 를 사용하여 제작함 (회사측에서 ERD 제공)
+
+ * Django 에서 프로젝트 빌드할 시 ORM 쪽에서 에러가 발생하여 null 로 설정
+
+ * CRUD 를 작성할 때 'D'(Delete) 를 직접적 삭제(물리적 삭제)로 짜놓았고 해당코드를 수정하지 못함
+
+ * 논리적 삭제가 있으며 테이블 내 데이터의 유효값을 표시하는 컬럼을 하나 추가한 뒤 그 값에 따라서 판단을 진행
+
+ * 서로 관계가 맺어져 있는 테이블에서 PK 의 속성을 가진 테이블 안에 레코드가 변경되거나 삭제되면 그에 따라서 종속되는 테이블도 영항을 미친다는 특성
+
+ * 데코레이터 사용은 프로젝트 작성 시 pycharm 이라는 에디터를 사용했고 에디터 측에서 Suggestion 으로 계속해서 나타났기 때문에 데코레이터를 사용 (@classmethod 사용에 관한 질문과 답변)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;추가질문:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;논리적 삭제를 알고있음에도 그렇게 하지 않은 이유는 무엇인가&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;default = null 은 먼저 등록하고 나중에 데이터 관계를 형성하기 위함이 아니였나&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;추가질문 답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 과제 당시 데이터 모델링을 수정하거나 그러진 못했다 (시간이 없었다는 핑계를 돌려서...)
+
+ * 프로젝트 빌드 시 문제때문에 그러한 것이였고 그렇게 생각한 의도한 것이 아니였다
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;이력서에 대한 질문과 응답&lt;/p&gt;
+
+    &lt;p&gt;이력서에 있는 포트폴리오와 작업에 대한 설명&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;REST API 개발 구현은 어떤식으로 이루어졌나?&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;python 푸시 서버를 구현했는데 이력서 안에 python 버전을 적시해놓은 이유가 있는가? (python 2.7 을 적어놨음)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;REST API 와 GraphQL 이 같이 적혀있는데 이에 대해 설명해줄수 있는가?&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;GraphQL 을 도입한 계기는 무엇인가?&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * GraphQL 과 Apollo 를 사용하여 개발
+
+ * 다른 의미는 없지만 python 3 버전과 2 버전의 차이가 많아서 적어놓은 것
+
+ * Refactoring 을 진행하면서 Rest api 를 구현했고 (비지니스 진행을 위해) 구현한 소스를 GraphQL 로 변경하면서 코딩을 진행 (하나의 프로젝트로 진행한 것이 아님)
+
+ * Rest API 를 지속적으로 개발하기 위해서는 기능에 맞는 새로운 URI 를 설정해야하고 메인 버전의 변경을 위해선 전체적인 코드리뷰와 테스트를 다시해보아야 하는 것으로 그 측면에 있어서 GraphQL 은 이러한 문제를 해결해줄수 있는 방안이였으며, 지속적인 유지보수를 위해 도입을 추진
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;그 외&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;평소에 공부하는 방법을 알려달라&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;관심사는 어떤 분야인가?&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;python 이 싱글 쓰레드의 특성을 가지고 있어 여러가지의 작업을 동시에 진행할 수 없는 문제가 있는데 이에 대한 해결방안은 어떤것이 있는가?&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;전 직장에서 짧은 기간 있었는데 어떠한 이유때문인가?&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 새로운 지식에 관하여 서점에 들려 책을 많이 읽어보는 편
+
+ * 프로젝트 진행 중(회사 업무로 인한 문제)가 발생시 해당 문제가 되는 공식문서를 파악하여 환경에 대해 이해하려 함
+
+ * 매번 관심사는 달라지고, 이번에 지원한 백엔드 개발자로 현재 관심사는 python 쪽에 있다. 여러가지 언어에도 관심이 있지만 주로 커뮤니티에서 유행하거나 많이 언급되는 단어에 관심이 가는 편이며 하나에 몰두해서 관심이 가는 것은 아직 정해지지 않았다.
+
+ * 사내에 있었던 일에 대해 솔직하게 답함 (숨기는 것 보다 솔직하게 말하는 편이 좋다고 생각하여 여과없이 다 말함, 팀과 대표의 마찰부터 시작해서 CTO 의 부당한 지시 및 제대로 이루어지지 않는 프로젝트 마무리 등...)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;느낀점&quot;&gt;느낀점&lt;/h3&gt;
+
+&lt;p&gt;다른 회사에서 진행했던 면접보다 분위기가 부드러운 회사였다.&lt;/p&gt;
+
+&lt;p&gt;개발자분들도 최대한 어려운 질문을 풀어서 하려고했고 딱딱한 자세로 물어보거나 떠보는 듯한 질문은 하지않았다.&lt;/p&gt;
+
+&lt;p&gt;내가 스스로 아쉽게 생각한 점은 다른 면접이 같은 주에 있어서 하나의 면접을 준비하고(그 면접은 잘못된 방법으로 준비했지만…) 제시한 과제를 수행해야 했으므로 시간적 압박과 스트레스가 있었다.&lt;/p&gt;
+
+&lt;p&gt;프로젝트에 대한 완성도는 떨어지고 그 만큼 리뷰를 진행할 때 묻어나오지 않았나 싶다.&lt;/p&gt;
+
+&lt;p&gt;또한 면접시 얘기하면서 솔직함이 모든 문제의 답변이 되지 않는 생각이 든다.&lt;/p&gt;
+
+&lt;h3 id=&quot;총평&quot;&gt;총평&lt;/h3&gt;
+
+&lt;p&gt;프로젝트로 과제를 해본 경험이었다.&lt;/p&gt;
+
+&lt;p&gt;요구사항에 따라 과제를 진행했고 그 만큼 요구사항을 잘 분석하여 구현했는지 평가하는 자리가 되었다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;추가글&quot;&gt;추가글&lt;/h3&gt;
+
+&lt;p&gt;2019.10.25&lt;/p&gt;
+
+&lt;p&gt;결과 탈락.&lt;/p&gt;
+
+&lt;p&gt;1주일 안에 결과를 알려준다고 면접시 말해주었지만 2주째 보류한 상태에서 결과를 받았다&lt;/p&gt;
+
+&lt;p&gt;살짝 늦어진다고 생각하면서 면접에 붙는건가 생각하다가 그 생각은 수포로 돌아갔다…&lt;/p&gt;</content><author><name>JIWAN YE</name></author><category term="interviews" /><summary type="html">29cm 면접 진행 복기 python 을 주 언어로 사용하는 백엔드 개발자 포지션으로 지원 순서 면접 진행하기에 앞서 선행 과제를 내줌 과제내용은 python 웹 프레임워크인 Django 로 RESTful API 구현 (제한사항: Django REST Framework 사용금지) 데드라인은 10월 4일까지 총 면접시간: 40m 프로젝트 (제출한 과제를 토대로 코드리뷰 진행) 면접 들어가기에 앞서 python, django 의 이해도(숙련도)는 많은 얘기를 하지 않겠다고 먼저 언급 외래키에 대해서 default 값을 null 로 잡아놓은 이유는 무엇인가 외래키의 특성중 Cascade 란 특성을 설정했는데 이에 대해서 설명 view 단 클래스 작성시 데코레이터를 사용한 이유는 무엇인가 CRUD 작성 시 레코드 삭제를 하게되면 물리적 삭제가 큰 문제가 없는가 답변: * 기존에 주어진 데이터모델링을 바탕으로 sqlite 를 사용하여 제작함 (회사측에서 ERD 제공) * Django 에서 프로젝트 빌드할 시 ORM 쪽에서 에러가 발생하여 null 로 설정 * CRUD 를 작성할 때 'D'(Delete) 를 직접적 삭제(물리적 삭제)로 짜놓았고 해당코드를 수정하지 못함 * 논리적 삭제가 있으며 테이블 내 데이터의 유효값을 표시하는 컬럼을 하나 추가한 뒤 그 값에 따라서 판단을 진행 * 서로 관계가 맺어져 있는 테이블에서 PK 의 속성을 가진 테이블 안에 레코드가 변경되거나 삭제되면 그에 따라서 종속되는 테이블도 영항을 미친다는 특성 * 데코레이터 사용은 프로젝트 작성 시 pycharm 이라는 에디터를 사용했고 에디터 측에서 Suggestion 으로 계속해서 나타났기 때문에 데코레이터를 사용 (@classmethod 사용에 관한 질문과 답변) 추가질문: 논리적 삭제를 알고있음에도 그렇게 하지 않은 이유는 무엇인가 default = null 은 먼저 등록하고 나중에 데이터 관계를 형성하기 위함이 아니였나 추가질문 답변: * 과제 당시 데이터 모델링을 수정하거나 그러진 못했다 (시간이 없었다는 핑계를 돌려서...) * 프로젝트 빌드 시 문제때문에 그러한 것이였고 그렇게 생각한 의도한 것이 아니였다 이력서에 대한 질문과 응답 이력서에 있는 포트폴리오와 작업에 대한 설명 REST API 개발 구현은 어떤식으로 이루어졌나? python 푸시 서버를 구현했는데 이력서 안에 python 버전을 적시해놓은 이유가 있는가? (python 2.7 을 적어놨음) REST API 와 GraphQL 이 같이 적혀있는데 이에 대해 설명해줄수 있는가? GraphQL 을 도입한 계기는 무엇인가? 답변: * GraphQL 과 Apollo 를 사용하여 개발 * 다른 의미는 없지만 python 3 버전과 2 버전의 차이가 많아서 적어놓은 것 * Refactoring 을 진행하면서 Rest api 를 구현했고 (비지니스 진행을 위해) 구현한 소스를 GraphQL 로 변경하면서 코딩을 진행 (하나의 프로젝트로 진행한 것이 아님) * Rest API 를 지속적으로 개발하기 위해서는 기능에 맞는 새로운 URI 를 설정해야하고 메인 버전의 변경을 위해선 전체적인 코드리뷰와 테스트를 다시해보아야 하는 것으로 그 측면에 있어서 GraphQL 은 이러한 문제를 해결해줄수 있는 방안이였으며, 지속적인 유지보수를 위해 도입을 추진 그 외 평소에 공부하는 방법을 알려달라 관심사는 어떤 분야인가? python 이 싱글 쓰레드의 특성을 가지고 있어 여러가지의 작업을 동시에 진행할 수 없는 문제가 있는데 이에 대한 해결방안은 어떤것이 있는가? 전 직장에서 짧은 기간 있었는데 어떠한 이유때문인가? 답변: * 새로운 지식에 관하여 서점에 들려 책을 많이 읽어보는 편 * 프로젝트 진행 중(회사 업무로 인한 문제)가 발생시 해당 문제가 되는 공식문서를 파악하여 환경에 대해 이해하려 함 * 매번 관심사는 달라지고, 이번에 지원한 백엔드 개발자로 현재 관심사는 python 쪽에 있다. 여러가지 언어에도 관심이 있지만 주로 커뮤니티에서 유행하거나 많이 언급되는 단어에 관심이 가는 편이며 하나에 몰두해서 관심이 가는 것은 아직 정해지지 않았다. * 사내에 있었던 일에 대해 솔직하게 답함 (숨기는 것 보다 솔직하게 말하는 편이 좋다고 생각하여 여과없이 다 말함, 팀과 대표의 마찰부터 시작해서 CTO 의 부당한 지시 및 제대로 이루어지지 않는 프로젝트 마무리 등...) 느낀점 다른 회사에서 진행했던 면접보다 분위기가 부드러운 회사였다. 개발자분들도 최대한 어려운 질문을 풀어서 하려고했고 딱딱한 자세로 물어보거나 떠보는 듯한 질문은 하지않았다. 내가 스스로 아쉽게 생각한 점은 다른 면접이 같은 주에 있어서 하나의 면접을 준비하고(그 면접은 잘못된 방법으로 준비했지만…) 제시한 과제를 수행해야 했으므로 시간적 압박과 스트레스가 있었다. 프로젝트에 대한 완성도는 떨어지고 그 만큼 리뷰를 진행할 때 묻어나오지 않았나 싶다. 또한 면접시 얘기하면서 솔직함이 모든 문제의 답변이 되지 않는 생각이 든다. 총평 프로젝트로 과제를 해본 경험이었다. 요구사항에 따라 과제를 진행했고 그 만큼 요구사항을 잘 분석하여 구현했는지 평가하는 자리가 되었다. 추가글 2019.10.25 결과 탈락. 1주일 안에 결과를 알려준다고 면접시 말해주었지만 2주째 보류한 상태에서 결과를 받았다 살짝 늦어진다고 생각하면서 면접에 붙는건가 생각하다가 그 생각은 수포로 돌아갔다…</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/interview-vector-image.jpg" /></entry><entry><title type="html">2019.10.02 - Interview (Javascript Scraping Position)</title><link href="http://localhost:4000/interviews/interview-2.html" rel="alternate" type="text/html" title="2019.10.02 - Interview (Javascript Scraping Position)" /><published>2019-10-02T00:00:00+00:00</published><updated>2019-10-02T00:00:00+00:00</updated><id>http://localhost:4000/interviews/interview-2</id><content type="html" xml:base="http://localhost:4000/interviews/interview-2.html">&lt;h2 id=&quot;면접-진행-복기&quot;&gt;면접 진행 복기&lt;/h2&gt;
+
+&lt;p&gt;Javascript 스크래핑 포지션에 지원&lt;/p&gt;
+
+&lt;h3 id=&quot;순서&quot;&gt;순서&lt;/h3&gt;
+
+&lt;p&gt;회사에 방문 후 현장코딩을 하는 과정으로 진행&lt;/p&gt;
+
+&lt;p&gt;코딩리뷰를 통해서 문제해결능력을 파악하고 추가적으로 요청한 내용에 대해서 잘 처리할 수 있는지 확인&lt;/p&gt;
+
+&lt;p&gt;총 면접 시간: &lt;strong&gt;2h&lt;/strong&gt; (코딩 시간: &lt;strong&gt;1h&lt;/strong&gt; / 코딩 리뷰 및 테스트: &lt;strong&gt;1h&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;p&gt;모든 코드는 console 창에서 직접 코딩하고 테스트하는 방식&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;면접에서 내준 과제를 통해 현장코딩 진행&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;첫번째는 모 사이트에 접속 후 해당 속성을 가진 엘리먼트를 추출 후 안에 있는 텍스트를 역 출력하는 과제&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;두번째는 모 사이트에 접속 후 input 값을 채우고 핸드폰 번호로 인증 메세지올 수 있도록 하는 과제&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;코딩리뷰 진행&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;첫번째 과제&lt;/p&gt;
+
+    &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;를 사용하여 해당 엘리먼트를 추출하였고 그 다음 innerText 속성을 가져와 엘리먼트 안에있는 텍스트를 가져옴&lt;/p&gt;
+
+    &lt;p&gt;그 후 가져온 텍스트를 배열로 치환 후 배열을 역순으로 재배열 -&amp;gt; join 으로 각 문자를 합쳐서 문자열로 출력함&lt;/p&gt;
+
+    &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;abcdefg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;test_arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reversed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;test_arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reverse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reversed_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reversed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reversed_str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;추가질문:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;getElementById() 메소드 말고 다른 메소드를 사용하여 해당 엘리먼트를 가져옴&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;태그의 속성 중 class 와 id 의 차이는 무엇인가 (역할 중심으로 설명)&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;구현한 것 중 함수를 쓰지말고 다른 방식으로 역순을 할 수 있는가&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;추가질문 답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  * getElementById() 말고 다른 답을 하지 못함
+
+  * class 는 여러가지 속성을 정의하여 중복된 속성을 부여해 관리를 할 수 있고 id 는 해당 태그의 식별자로 특수하게 태그를 관리하거나 처리하고자 할 때 사용된다
+
+  * for 문을 이용하여 역순으로 값들을 return 할 배열에 넣어서 하나로 만듬
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ret_arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;ret_arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ret_arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;추가질문:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;앞에 사용했던 for 문 말고 다른형식으로 할 수 있나&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;추가질문 답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  * 처음에 arr.map() 함수를 사용하여 해당 값들을 바꾸려고 했음 (잘못된 방법)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;피드백:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;for 문 말고도 forEach 라는 원소를 순회하는 함수를 이용하여 사용 가능&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;자바스크립트에서 특정 함수의 값들을 계산하여 리턴하는 메소드들이 있는데 어떠한 것들이 있는지 (원본 배열을 계산하여 리턴하느냐 혹은 계산 후 새로운 배열을 리턴하느냐의 문제로 보임)&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;피드백 답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  * array.splice() / array.slice() 로 전자는 배열을 잘라내서 원본 배열의 변화와 잘라낸 배열을 새로운 배열로 리턴해주고 후자는 원본 배열은 그대로이고 복사한 배열을 새로운 배열로 리턴해줌
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;hr /&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;두번째 과제&lt;/p&gt;
+
+    &lt;p&gt;문제를 이해하지 못해 코딩을 할 수 없었음&lt;/p&gt;
+
+    &lt;p&gt;이 문제에 대한 문제의도를 묻고 답을 얻음&lt;/p&gt;
+
+    &lt;p&gt;면접관 답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  * 해당 사이트에서 개발자 옵션 도구창에 있는 Console 창에 코딩 후 해당 함수를 호출하게 되면 핸드폰에 메세지가 가게 만드는 것이 과제였다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;사이트는 회원가입할 시 필요한 핸드폰 인증하는 과정&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;추가 과제&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;면접관이 요청한 내용에 대해 제대로 구현을 하는지 확인 (이때부터 머리가 하얘져서 답변을 하지못하고 있었음)&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  1. select 를 이용해서 드롭박스의 값을 고르시오
+
+  2. input 의 내용을 채우시오
+
+  3. 클릭 이벤트를 발생시키시오
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  * 이전에 썼던 getElementById 를 통해 엘리먼트를 가져왔지만 select, option 속성을 이용하여 값 설정하지 못함
+
+  * input 의 value 값을 채우지 못함
+
+  * 사이트에 있는 이벤트 함수를 찾지못해 답하지 못함
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;지식의 습득 과정&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;새로운 지식을 어떻게 습득하는가?&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 주로 서점을 많이 찾아간다.
+
+ * 커뮤니티를 찾아보다가 관심가는 기술이 있다면 해당 기술이 공식문서를 보기도하고 책을 통해서도 습득한다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;추가질문:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;공식문서를 본다고 했는데 앞에서 했던 코딩을 보면 공식문서를 제대로 확인하지 못했다고 보는데 그렇게 생각해도 되는가? (아마도 내가 부족하다는 걸 말해주고 싶었나보다…)&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 확인을 제대로 하지못하고 사용해서 그렇게 생각해도 될 것이다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;그 외 질문&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;왜 백엔드 개발로 하다가 백엔드 포지션이 아닌 이쪽으로 지원하게 되었는가?&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 현재 javascript 는 여러 분야에서 쓰이고 있고 도전을 해보고 싶었다
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;느낀점&quot;&gt;느낀점&lt;/h3&gt;
+
+&lt;p&gt;백엔드 개발자로 계속해서 일을 진행하면서 Javascript 스크래핑이라는 백엔드와는 다른 분야로 지원한 첫번째였다.&lt;/p&gt;
+
+&lt;p&gt;또한 현장코딩을 바로 진행하는 것도 처음이라 많이 긴장을 했었고 현장코딩 얘기를 듣고 알고리즘에 관련된 문제로 출제될 줄 알고 면접준비 또한 알고리즘 문제로 준비했으나 지원한 포지션에 대해서 제대로 이해하고 있는지에 대한 테스트와 그에 따르는 지식을 테스트 하는 것이었다.&lt;/p&gt;
+
+&lt;p&gt;과제를 처음 받았을 때 해당 사이트에서 접속하여 console 창이 아닌 코드를 직접 짜서 html 코드를 불러오고 불러온 코드에서 속성을 추출해 결과를 만들어내는 것으로 이해했다.&lt;/p&gt;
+
+&lt;p&gt;하지만 잘못된 방향으로 생각하여 시간을 약 20분 정도 잃어버렸다.&lt;/p&gt;
+
+&lt;p&gt;거기에다가 처음에 인터넷 접속 문제로 인터넷이 약 10분 간 접속이 안되어 몹시 당황했다.&lt;/p&gt;
+
+&lt;p&gt;이에 따라서 면접관은 10분 정도의 시간을 더 부여해줬고 그 시간만큼 코딩을 진행할 수 있었다.&lt;/p&gt;
+
+&lt;p&gt;그리고 면접관 중 나에게 도움을 주려는 면접관과 따끔한 의견을 주는 면접관이 있어 면접은 정말 대충준비하고 얼버무리는 형식으로 하면 안되겠다고 뼈 저리게 느끼는 계기가 되었다.&lt;/p&gt;
+
+&lt;h3 id=&quot;총평&quot;&gt;총평&lt;/h3&gt;
+
+&lt;p&gt;현장 코딩이라는 과제가 처음이였고 색다른 경험을 했다.&lt;/p&gt;
+
+&lt;p&gt;그리고 이번의 면접도 내가 공부 혹은 여러가지고 부족함을 한번 더 느끼게 되었고 면접을 진행하면서 포장하려는 말을 하게되면 오히려 더 독이 되어서 돌아오는 느낌을 받았다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;이러이러한 기술을 내가 써봤다&lt;/code&gt; 의 형식이 아닌 제대로 설명해주고 이해시킬 수 있는 정도로 되어야 써봤다고 설명할 수 있을 것 같다.&lt;/p&gt;</content><author><name>JIWAN YE</name></author><category term="interview" /><summary type="html">면접 진행 복기 Javascript 스크래핑 포지션에 지원 순서 회사에 방문 후 현장코딩을 하는 과정으로 진행 코딩리뷰를 통해서 문제해결능력을 파악하고 추가적으로 요청한 내용에 대해서 잘 처리할 수 있는지 확인 총 면접 시간: 2h (코딩 시간: 1h / 코딩 리뷰 및 테스트: 1h) 모든 코드는 console 창에서 직접 코딩하고 테스트하는 방식 면접에서 내준 과제를 통해 현장코딩 진행 첫번째는 모 사이트에 접속 후 해당 속성을 가진 엘리먼트를 추출 후 안에 있는 텍스트를 역 출력하는 과제 두번째는 모 사이트에 접속 후 input 값을 채우고 핸드폰 번호로 인증 메세지올 수 있도록 하는 과제 코딩리뷰 진행 첫번째 과제 document.getElementById() 를 사용하여 해당 엘리먼트를 추출하였고 그 다음 innerText 속성을 가져와 엘리먼트 안에있는 텍스트를 가져옴 그 후 가져온 텍스트를 배열로 치환 후 배열을 역순으로 재배열 -&amp;gt; join 으로 각 문자를 합쳐서 문자열로 출력함 var test = &quot;abcdefg&quot;; var test_arr = test.split(''); var reversed = test_arr.reverse(); var reversed_str = reversed.join(''); console.log(reversed_str); 추가질문: getElementById() 메소드 말고 다른 메소드를 사용하여 해당 엘리먼트를 가져옴 태그의 속성 중 class 와 id 의 차이는 무엇인가 (역할 중심으로 설명) 구현한 것 중 함수를 쓰지말고 다른 방식으로 역순을 할 수 있는가 추가질문 답변: * getElementById() 말고 다른 답을 하지 못함 * class 는 여러가지 속성을 정의하여 중복된 속성을 부여해 관리를 할 수 있고 id 는 해당 태그의 식별자로 특수하게 태그를 관리하거나 처리하고자 할 때 사용된다 * for 문을 이용하여 역순으로 값들을 return 할 배열에 넣어서 하나로 만듬 var ret_arr = []; for(let i=arr.length-1; i&amp;gt;=0; i--) { ret_arr.push(arr[i]); } console.log(ret_arr.join('')); 추가질문: 앞에 사용했던 for 문 말고 다른형식으로 할 수 있나 추가질문 답변: * 처음에 arr.map() 함수를 사용하여 해당 값들을 바꾸려고 했음 (잘못된 방법) 피드백: for 문 말고도 forEach 라는 원소를 순회하는 함수를 이용하여 사용 가능 arr.forEach(function(element) { ... }); 자바스크립트에서 특정 함수의 값들을 계산하여 리턴하는 메소드들이 있는데 어떠한 것들이 있는지 (원본 배열을 계산하여 리턴하느냐 혹은 계산 후 새로운 배열을 리턴하느냐의 문제로 보임) 피드백 답변: * array.splice() / array.slice() 로 전자는 배열을 잘라내서 원본 배열의 변화와 잘라낸 배열을 새로운 배열로 리턴해주고 후자는 원본 배열은 그대로이고 복사한 배열을 새로운 배열로 리턴해줌 두번째 과제 문제를 이해하지 못해 코딩을 할 수 없었음 이 문제에 대한 문제의도를 묻고 답을 얻음 면접관 답변: * 해당 사이트에서 개발자 옵션 도구창에 있는 Console 창에 코딩 후 해당 함수를 호출하게 되면 핸드폰에 메세지가 가게 만드는 것이 과제였다. 사이트는 회원가입할 시 필요한 핸드폰 인증하는 과정 추가 과제 면접관이 요청한 내용에 대해 제대로 구현을 하는지 확인 (이때부터 머리가 하얘져서 답변을 하지못하고 있었음) 1. select 를 이용해서 드롭박스의 값을 고르시오 2. input 의 내용을 채우시오 3. 클릭 이벤트를 발생시키시오 답변: * 이전에 썼던 getElementById 를 통해 엘리먼트를 가져왔지만 select, option 속성을 이용하여 값 설정하지 못함 * input 의 value 값을 채우지 못함 * 사이트에 있는 이벤트 함수를 찾지못해 답하지 못함 지식의 습득 과정 새로운 지식을 어떻게 습득하는가? 답변: * 주로 서점을 많이 찾아간다. * 커뮤니티를 찾아보다가 관심가는 기술이 있다면 해당 기술이 공식문서를 보기도하고 책을 통해서도 습득한다. 추가질문: 공식문서를 본다고 했는데 앞에서 했던 코딩을 보면 공식문서를 제대로 확인하지 못했다고 보는데 그렇게 생각해도 되는가? (아마도 내가 부족하다는 걸 말해주고 싶었나보다…) 답변: * 확인을 제대로 하지못하고 사용해서 그렇게 생각해도 될 것이다. 그 외 질문 왜 백엔드 개발로 하다가 백엔드 포지션이 아닌 이쪽으로 지원하게 되었는가? 답변: * 현재 javascript 는 여러 분야에서 쓰이고 있고 도전을 해보고 싶었다 느낀점 백엔드 개발자로 계속해서 일을 진행하면서 Javascript 스크래핑이라는 백엔드와는 다른 분야로 지원한 첫번째였다. 또한 현장코딩을 바로 진행하는 것도 처음이라 많이 긴장을 했었고 현장코딩 얘기를 듣고 알고리즘에 관련된 문제로 출제될 줄 알고 면접준비 또한 알고리즘 문제로 준비했으나 지원한 포지션에 대해서 제대로 이해하고 있는지에 대한 테스트와 그에 따르는 지식을 테스트 하는 것이었다. 과제를 처음 받았을 때 해당 사이트에서 접속하여 console 창이 아닌 코드를 직접 짜서 html 코드를 불러오고 불러온 코드에서 속성을 추출해 결과를 만들어내는 것으로 이해했다. 하지만 잘못된 방향으로 생각하여 시간을 약 20분 정도 잃어버렸다. 거기에다가 처음에 인터넷 접속 문제로 인터넷이 약 10분 간 접속이 안되어 몹시 당황했다. 이에 따라서 면접관은 10분 정도의 시간을 더 부여해줬고 그 시간만큼 코딩을 진행할 수 있었다. 그리고 면접관 중 나에게 도움을 주려는 면접관과 따끔한 의견을 주는 면접관이 있어 면접은 정말 대충준비하고 얼버무리는 형식으로 하면 안되겠다고 뼈 저리게 느끼는 계기가 되었다. 총평 현장 코딩이라는 과제가 처음이였고 색다른 경험을 했다. 그리고 이번의 면접도 내가 공부 혹은 여러가지고 부족함을 한번 더 느끼게 되었고 면접을 진행하면서 포장하려는 말을 하게되면 오히려 더 독이 되어서 돌아오는 느낌을 받았다. 이러이러한 기술을 내가 써봤다 의 형식이 아닌 제대로 설명해주고 이해시킬 수 있는 정도로 되어야 써봤다고 설명할 수 있을 것 같다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/interview-vector-image.jpg" /></entry><entry><title type="html">2019.09.30 - Interview (PHP Backend Position)</title><link href="http://localhost:4000/interviews/interview-1.html" rel="alternate" type="text/html" title="2019.09.30 - Interview (PHP Backend Position)" /><published>2019-09-30T00:00:00+00:00</published><updated>2019-09-30T00:00:00+00:00</updated><id>http://localhost:4000/interviews/interview-1</id><content type="html" xml:base="http://localhost:4000/interviews/interview-1.html">&lt;h2 id=&quot;면접-진행-복기&quot;&gt;면접 진행 복기&lt;/h2&gt;
+
+&lt;p&gt;회사 이직을 준비하는 단계에서 첫 면접으로 PHP 백엔드 개발자의 포지션에 지원하게 됨&lt;/p&gt;
+
+&lt;h3 id=&quot;순서&quot;&gt;순서&lt;/h3&gt;
+
+&lt;p&gt;간단한 인사와 이력서 검토 -&amp;gt; 면접 진행&lt;/p&gt;
+
+&lt;p&gt;총 면접시간: &lt;strong&gt;1h&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;회사에서 진행한 프로젝트 설명&lt;/p&gt;
+
+    &lt;p&gt;전 직장에서 사용한 기술 스택에 대하여:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;사용했던 php 프레임워크에 대한 설명&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;php 신규 플랫폼을 개발하게 된 계기&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;ORM 사용&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;AWS 서버 구성을 해보았는가&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;첫 직장에서 여러가지의 언어를 경험해봤는데 그 중 python 모바일 푸시 서버를 어떻게 구현을 하였는가?&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;React 로 페이지 구성은 어떻게 하였는가?&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * Symfony Framework 을 신규 프로젝트의 프레임워크로 채택하고 Composer 를 통해 라이브러리를 관리하였다. 또한 PSR 의 내용을 토대로 코드 작성을 하였다.
+
+ * 기존 플랫폼에서 운영중이던 상황에서 데이터베이스의 문제가 일어나 그 부분을 수정하고 개발적인 측면에서 효율적이고 차후의 기술을 도입하기 위해 신규 플랫폼 개발을 결정함
+
+ * Symfony Framework 를 통해서 ORM 을 사용해보았다고 하였으나 실제적으로는 많은 내용을 PDO 객체를 통해서 직접적인 쿼리문을 작성하여 데이터를 조회함
+
+ * KT Cloud 를 통해서 진행하였고 Load Balancing 서비스와 CDN 서비스를 이용함
+
+ * 외부 API 툴을 이용하는 것 처럼 curl 을 이용하여 통신을 주고받음 (python 과 FCM 을 이용하여 푸시서비스 구현)
+
+ * 클라이언트와 관리자 페이지를 기본으로하는 레이아웃을 2개로 나누어 제작
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;추가질문:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;답변 중 PSR 이란 말을 했는데 이것에 대해 설명해 줄 수 있는가?&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;푸시 서버에 대해서 구체적으로 설명해 줄 수 있는가?&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;클라이언트, 관리자 페이지를 두개로 나누었다고 했는데 SPA 에 대해 개념적으로 설명할 수 있는가? (3번 질문 - SPA 에 대하여 설명으로 연결)&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;추가질문 답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * PSR-0 버전을 먼저 말하고 그 다음은 코딩 스타일에 대한 가이드라인으로 답함 (deprecated 된 버전을 설명하여 여기에서 잘못답하지 않았나 생각이 듦)
+
+ * PSR-0 버전은 autoloading 에 대해서 가이드해주는 형식으로 되어있는데 namespace 작성시 맨 처음 시작은 회사의 이름 및 대분류를 나타내는 키워드, 그 다음은 프로젝트 이름 및 중분류, 그 다음은 기능을 구현하는 디렉토리 및 소분류, 마지막은 클래스의 이름을 마지막으로 설정 (이때 면접관이 PSR-0 은 2014년 정도에 deprecated 되었다고 말해주었다)
+
+ * 실제 디바이스 별 푸시 메세지를 보내는 소스는 python 을 통해서 구현을 했고 관리자 페이지에서 설정한 메세지 내용을 통해서 예약된 시간 혹은 즉시 보낼 수 있는 것으로 구현
+
+ * 관리자 페이지에서 한번 전송할 때 약 6,000~7,000 건 정도를 보내는데 이것을 1,000개 단위로 분리하여 푸시서버에 보내고 Response 를 받은 후에 다시 1,000개를 보내는 형식으로 구현함
+
+ * 예약 시간은 1시간 마다 조회하는 crontab 을 이용하여 구현하였고 관리자 페이지에서 액션 시 curl 을 통해서 전달
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;추가질문:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;메세지를 보냈지만 Response 가 늦어지는 경우에는 어떻게 해야하는가?&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;추가질문 답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 1,000 개 단위를 좀 더 잘게쪼개서 한꺼번에 처리하는 양의 수를 줄인다. 100개 혹은 10개 씩 푸시서버에 보내는 단위를 줄인다
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;기술 스택에 대한 질문&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;PHP Symfony framework 에 말고 다른 프레임워크를 사용해본적 있는가?&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;ORM 을 사용하는 이유는 무엇인가?&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Typescript 와 Javascript 의 특성은 무엇인가?&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 개인 프로젝트로 CodeIgniter 를 사용
+
+ * 코딩을 하기에 쿼리문을 작성하는데 시간을 줄일 수 있고 코드에 좀 더 집중할 수 있게 도와주는 역할을 한다고 생각
+
+ * 큰 차이점은 함수나 어떠한 기능을 만들고 사용할 때 Typescript 에서 강제성을 띄는게 좀 더 실수를 줄일 수 있고 코드리딩을 하는데 원할하게 해주어 제일 큰 차이라고 생각함
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;기본적인 개념 질문&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;SPA에 대해서 설명&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;MVC 패턴에 대해서 설명&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Interface 를 사용하면 어떤 점이 좋은가&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * single page application 으로 하나의 페이지에서 데이터의 요청이 오는 부분만 바꾸어 페이지 전체를 새롭게 로딩하는게 아닌 필요 부분만 새로고치는 방법을 말함
+
+ * Model-View-Controller 의 구조로 View 에서 action 을 취하면 Controller 로 들어가 데이터를 변경 및 조회를 함
+
+ * Interface 를 만들어 사용하게 될 경우 하나의 기능을 구현 시 공통적으로 필요한 부분을 Interface 로 분리하여 강제적으로 구현할 수 있게 만드는 특성을 가지고 있음
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;추가질문:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;MVC 패턴 말고 다른 알고있는 패턴과 설명을 할 수 있는가?&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;추가질문 답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * MVVM 이라는 패턴을 알고있지만 어떻게 사용되는지는 설명못함 (이때도 한번에 말한게 아니고 기억을 더듬어 얘기를 함)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;전문성&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Lightsail 을 이용하면서 cpu credit 이라는 내용을 알고있는가, 확장개념으로 AWS 의 저사양 인스턴트는 모두 이러한 특징을 가지고있는데 설명을 해줄 수 있느냐&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;답변:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; * 처음에 cpu 에 따라 사용량이 부과되는 것인가 넘겨집음 (전혀 상관없는 내용을 말함)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;피드백:&lt;/p&gt;
+
+    &lt;p&gt;CPU Credit 이란 어느정도 cpu 가 사용하게 되면 그 이상으로는 더 이상 사용하지 못하게 되므로 한계치를 갖게 된다는 내용&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;느낀점&quot;&gt;느낀점&lt;/h3&gt;
+
+&lt;p&gt;경력직으로 이직을 위한 첫 면접이여서 어떠한 내용으로 면접을 진행하게 될 지 의문을 가지고 시작한 면접이였다.&lt;/p&gt;
+
+&lt;p&gt;직장에서 내가 어떤 기술을 가지고있는지 가지고있는 지식에 대해서 제대로 이해를 하고 설명을 했는지에 대한 지표가 될 수 있는 기회가 되었다.&lt;/p&gt;
+
+&lt;p&gt;그 결과 참담한 결과만이 있었고 내 자신이 우쭐해 있었다는 판단이 들게되었다.&lt;/p&gt;
+
+&lt;p&gt;직장을 다니면서 &lt;code class=&quot;highlighter-rouge&quot;&gt;내가 이 정도는 잘하니까 이런식으로 하는거야&lt;/code&gt; 라는 생각이 팽배하여 직장을 다니고있었고 그 결과 이러한 일이 벌어졌다고 생각한다.&lt;/p&gt;
+
+&lt;p&gt;이는 너무나도 말도 안되는 생각이였다.&lt;/p&gt;
+
+&lt;h3 id=&quot;총평&quot;&gt;총평&lt;/h3&gt;
+
+&lt;p&gt;면접 결과로는 실패. 내 자신에게도 실망한 면접이였다.&lt;/p&gt;</content><author><name>JIWAN YE</name></author><category term="interviews" /><summary type="html">면접 진행 복기 회사 이직을 준비하는 단계에서 첫 면접으로 PHP 백엔드 개발자의 포지션에 지원하게 됨 순서 간단한 인사와 이력서 검토 -&amp;gt; 면접 진행 총 면접시간: 1h 회사에서 진행한 프로젝트 설명 전 직장에서 사용한 기술 스택에 대하여: 사용했던 php 프레임워크에 대한 설명 php 신규 플랫폼을 개발하게 된 계기 ORM 사용 AWS 서버 구성을 해보았는가 첫 직장에서 여러가지의 언어를 경험해봤는데 그 중 python 모바일 푸시 서버를 어떻게 구현을 하였는가? React 로 페이지 구성은 어떻게 하였는가? 답변: * Symfony Framework 을 신규 프로젝트의 프레임워크로 채택하고 Composer 를 통해 라이브러리를 관리하였다. 또한 PSR 의 내용을 토대로 코드 작성을 하였다. * 기존 플랫폼에서 운영중이던 상황에서 데이터베이스의 문제가 일어나 그 부분을 수정하고 개발적인 측면에서 효율적이고 차후의 기술을 도입하기 위해 신규 플랫폼 개발을 결정함 * Symfony Framework 를 통해서 ORM 을 사용해보았다고 하였으나 실제적으로는 많은 내용을 PDO 객체를 통해서 직접적인 쿼리문을 작성하여 데이터를 조회함 * KT Cloud 를 통해서 진행하였고 Load Balancing 서비스와 CDN 서비스를 이용함 * 외부 API 툴을 이용하는 것 처럼 curl 을 이용하여 통신을 주고받음 (python 과 FCM 을 이용하여 푸시서비스 구현) * 클라이언트와 관리자 페이지를 기본으로하는 레이아웃을 2개로 나누어 제작 추가질문: 답변 중 PSR 이란 말을 했는데 이것에 대해 설명해 줄 수 있는가? 푸시 서버에 대해서 구체적으로 설명해 줄 수 있는가? 클라이언트, 관리자 페이지를 두개로 나누었다고 했는데 SPA 에 대해 개념적으로 설명할 수 있는가? (3번 질문 - SPA 에 대하여 설명으로 연결) 추가질문 답변: * PSR-0 버전을 먼저 말하고 그 다음은 코딩 스타일에 대한 가이드라인으로 답함 (deprecated 된 버전을 설명하여 여기에서 잘못답하지 않았나 생각이 듦) * PSR-0 버전은 autoloading 에 대해서 가이드해주는 형식으로 되어있는데 namespace 작성시 맨 처음 시작은 회사의 이름 및 대분류를 나타내는 키워드, 그 다음은 프로젝트 이름 및 중분류, 그 다음은 기능을 구현하는 디렉토리 및 소분류, 마지막은 클래스의 이름을 마지막으로 설정 (이때 면접관이 PSR-0 은 2014년 정도에 deprecated 되었다고 말해주었다) * 실제 디바이스 별 푸시 메세지를 보내는 소스는 python 을 통해서 구현을 했고 관리자 페이지에서 설정한 메세지 내용을 통해서 예약된 시간 혹은 즉시 보낼 수 있는 것으로 구현 * 관리자 페이지에서 한번 전송할 때 약 6,000~7,000 건 정도를 보내는데 이것을 1,000개 단위로 분리하여 푸시서버에 보내고 Response 를 받은 후에 다시 1,000개를 보내는 형식으로 구현함 * 예약 시간은 1시간 마다 조회하는 crontab 을 이용하여 구현하였고 관리자 페이지에서 액션 시 curl 을 통해서 전달 추가질문: 메세지를 보냈지만 Response 가 늦어지는 경우에는 어떻게 해야하는가? 추가질문 답변: * 1,000 개 단위를 좀 더 잘게쪼개서 한꺼번에 처리하는 양의 수를 줄인다. 100개 혹은 10개 씩 푸시서버에 보내는 단위를 줄인다 기술 스택에 대한 질문 PHP Symfony framework 에 말고 다른 프레임워크를 사용해본적 있는가? ORM 을 사용하는 이유는 무엇인가? Typescript 와 Javascript 의 특성은 무엇인가? 답변: * 개인 프로젝트로 CodeIgniter 를 사용 * 코딩을 하기에 쿼리문을 작성하는데 시간을 줄일 수 있고 코드에 좀 더 집중할 수 있게 도와주는 역할을 한다고 생각 * 큰 차이점은 함수나 어떠한 기능을 만들고 사용할 때 Typescript 에서 강제성을 띄는게 좀 더 실수를 줄일 수 있고 코드리딩을 하는데 원할하게 해주어 제일 큰 차이라고 생각함 기본적인 개념 질문 SPA에 대해서 설명 MVC 패턴에 대해서 설명 Interface 를 사용하면 어떤 점이 좋은가 답변: * single page application 으로 하나의 페이지에서 데이터의 요청이 오는 부분만 바꾸어 페이지 전체를 새롭게 로딩하는게 아닌 필요 부분만 새로고치는 방법을 말함 * Model-View-Controller 의 구조로 View 에서 action 을 취하면 Controller 로 들어가 데이터를 변경 및 조회를 함 * Interface 를 만들어 사용하게 될 경우 하나의 기능을 구현 시 공통적으로 필요한 부분을 Interface 로 분리하여 강제적으로 구현할 수 있게 만드는 특성을 가지고 있음 추가질문: MVC 패턴 말고 다른 알고있는 패턴과 설명을 할 수 있는가? 추가질문 답변: * MVVM 이라는 패턴을 알고있지만 어떻게 사용되는지는 설명못함 (이때도 한번에 말한게 아니고 기억을 더듬어 얘기를 함) 전문성 Lightsail 을 이용하면서 cpu credit 이라는 내용을 알고있는가, 확장개념으로 AWS 의 저사양 인스턴트는 모두 이러한 특징을 가지고있는데 설명을 해줄 수 있느냐 답변: * 처음에 cpu 에 따라 사용량이 부과되는 것인가 넘겨집음 (전혀 상관없는 내용을 말함) 피드백: CPU Credit 이란 어느정도 cpu 가 사용하게 되면 그 이상으로는 더 이상 사용하지 못하게 되므로 한계치를 갖게 된다는 내용 느낀점 경력직으로 이직을 위한 첫 면접이여서 어떠한 내용으로 면접을 진행하게 될 지 의문을 가지고 시작한 면접이였다. 직장에서 내가 어떤 기술을 가지고있는지 가지고있는 지식에 대해서 제대로 이해를 하고 설명을 했는지에 대한 지표가 될 수 있는 기회가 되었다. 그 결과 참담한 결과만이 있었고 내 자신이 우쭐해 있었다는 판단이 들게되었다. 직장을 다니면서 내가 이 정도는 잘하니까 이런식으로 하는거야 라는 생각이 팽배하여 직장을 다니고있었고 그 결과 이러한 일이 벌어졌다고 생각한다. 이는 너무나도 말도 안되는 생각이였다. 총평 면접 결과로는 실패. 내 자신에게도 실망한 면접이였다.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/interview-vector-image.jpg" /></entry><entry><title type="html">Welcome to Millennial!</title><link href="http://localhost:4000/documentation/welcome-to-millennial.html" rel="alternate" type="text/html" title="Welcome to Millennial!" /><published>2017-01-01T00:00:00+00:00</published><updated>2017-01-01T00:00:00+00:00</updated><id>http://localhost:4000/documentation/welcome-to-millennial</id><content type="html" xml:base="http://localhost:4000/documentation/welcome-to-millennial.html">&lt;p&gt;Millennial is a minimalist Jekyll theme. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog. Below you can find everything you need to get started.&lt;/p&gt;
 
 &lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
 
@@ -244,7 +1201,7 @@ image:
     &lt;p&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;_data/settings.yml&lt;/code&gt;, under ‘social’, comment out the rss-square that points to &lt;code class=&quot;highlighter-rouge&quot;&gt;feed.xml&lt;/code&gt;, and uncomment the rss-square that points to &lt;code class=&quot;highlighter-rouge&quot;&gt;rss-feed.xml&lt;/code&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/head.html&lt;/code&gt;, comment out &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;link type=&quot;application/atom+xml&quot; rel=&quot;alternate&quot; href=&quot;http://localhost:4000/feed.xml&quot; title=&quot;Millennial&quot; /&amp;gt;&lt;/code&gt; and uncomment the line under the RSS 2.0 comment.&lt;/p&gt;
+    &lt;p&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/head.html&lt;/code&gt;, comment out &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;link type=&quot;application/atom+xml&quot; rel=&quot;alternate&quot; href=&quot;http://localhost:4000/feed.xml&quot; title=&quot;LivlyBear&quot; /&amp;gt;&lt;/code&gt; and uncomment the line under the RSS 2.0 comment.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -337,7 +1294,7 @@ image:
 
 &lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
 
-&lt;p&gt;Open sourced under the &lt;a href=&quot;https://github.com/LeNPaul/Millennial/blob/gh-pages/LICENSE.md&quot;&gt;MIT license&lt;/a&gt;.&lt;/p&gt;</content><author><name>Paul Le</name></author><category term="documentation" /><category term="sample" /><summary type="html">Millennial Millennial is a minimalist Jekyll theme for running a simple, clean, content-focused publishing platform for your publication site or blog through Github Pages, or on your own server. Everything that you will ever need to know about this Jekyll theme is included in the README below, which you can also find in the demo site. Notable features Compatible with GitHub Pages. Support for Jekyll’s built-in Sass/SCSS preprocessor and data files for making customizing easier. Google Analytics support. Commenting support powered by Disqus. Optimized for search engines. LaTeX support through MathJax. Table of Contents Introduction What is Jekyll Never Used Jeykll Before? Installation GitHub Pages Installation Local Installation Directory Structure Starting From Scratch Configuration Sample Posts Site Variables Adding Menu Pages Posts Layouts YAML Front Block Matter Features Design Considerations Disqus Google Analytics RSS Feeds Social Media Icons MathJax Syntax Highlighting Markdown Everything Else Contributing Questions? Credits License Introduction Millennial is a Jekyll theme that was built to be 100% compatible with GitHub Pages. If you are unfamiliar with GitHub Pages, you can check out their documentation for more information. Jonathan McGlone’s guide on creating and hosting a personal site on GitHub is also a good resource. What is Jekyll? Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. Basically, Jekyll takes your page content along with template files and produces a complete website. For more information, visit the official Jekyll site for their documentation. Codecademy also offers a great course on how to deploy a Jekyll site for complete beginners. Never Used Jekyll Before? The beauty of hosting your website on GitHub is that you don’t have to actually have Jekyll installed on your computer. Everything can be done through the GitHub code editor, with minimal knowledge of how to use Jekyll or the command line. All you have to do is add your posts to the _posts directory and edit the _config.yml file to change the site settings. With some rudimentary knowledge of HTML and CSS, you can even modify the site to your liking. This can all be done through the GitHub code editor, which acts like a content management system (CMS). Installation GitHub Pages Installation To start using Jekyll right away with GitHub Pages, fork the Millennial repository on GitHub. From there, you can rename your repository to ‘USERNAME.github.io’, where ‘USERNAME’ is your GitHub username, and edit the settings.yml file in the _data folder to your liking. Ensure that you have a branch named gh-pages. Your website should be ready immediately at ‘http://USERNAME.github.io’. Note: if you are hosting several sites under the same GitHub username, then you will have to use Project Pages instead of User Pages - just change the repository name to something other than ‘http://USERNAME.github.io’. Head over to the _posts directory to view all the posts that are currently on the website, and to see examples of what post files generally look like. You can simply just duplicate the template post and start adding your own content. Local Installation For a full local installation of Millennial, download your own copy of Millennial and unzip it into it’s own directory. From there, open up your favorite command line tool, enter bundle install, and then enter jekyll serve. Your site should be up and running locally at http://localhost:4000. Directory Structure If you are familiar with Jekyll, then the Millennial directory structure shouldn’t be too difficult to navigate. The following some highlights of the differences you might notice between the default directory structure. More information on what these folders and files do can be found in the Jekyll documentation site. Millennial/ ├── _data # Data files | └── settings.yml # Theme settings and custom text ├── _includes # Theme includes ├── _layouts # Theme layouts (see below for details) ├── _posts # Where all your posts will go ├── assets # Style sheets and images are found here | ├── css # Style sheets go here | | └── _sass # Folder containing SCSS files | | └── main.scss # Main SCSS file | | └── syntax.css # Style sheet for code syntax highlighting | └── img # Images go here ├── pages # Category pages ├── _config.yml # Site build settings ├── Gemfile # Ruby Gemfile for managing Jekyll plugins ├── index.md # Home page ├── LICENSE.md # License for this theme ├── README.md # Includes all of the documentation for this theme └── rss-feed.xml # Generates RSS 2.0 file which Jekyll points to Starting From Scratch To completely start from scratch, simply delete all the files in the _posts, assets/img, and pages folder, and add your own content. You may also replace the README.md file with your own README. Everything in the _data folder and _config.yml file can be edited to suit your needs. You may also change the favicon.ico file to your own favicon. Configuration Sample Posts Visit the the demo site to find sample posts that show what different types of text formatting look like. You can find these posts in the _posts folder, which show what the best practices for setting up your own site are. Site Variables To change site build settings, edit the _config.yml file found in the root of your repository, which you can tweak however you like. More information on configuration settings and plugins can be found on the Jekyll documentation site. This is also where you will be able to customize the title, description, and the author/owner of your site. If you are hosting your site on GitHub Pages, then committing a change to the _config.yml file will force a rebuild of your site with Jekyll. Any changes made should be viewable soon after. If you are hosting your site locally, then you must run jekyll serve again for the changes to take place. In the settings.yml file found in the _data folder, you will be able to customize your site settings, such as setting Disqus comments, Google Analytics, what shows up in your menu, and social media information. Adding Menu Pages The menu pages are found in the menu folder in the root directory, and can be added to your menu in the settings.yml file. Posts You will find example posts in your _posts directory. Go ahead and edit any post and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. To add new posts, simply add a file in the _posts directory that follows the convention of YYYY-MM-DD-name-of-post.md and includes the necessary front matter. Take a look at any sample post to get an idea about how it works. If you already have a website built with Jekyll, simply copy over your posts to migrate to Millennial. Layouts There are two main layout options that are included with Millennial: post and page. Layouts are specified through the YAML front block matter. Any file that contains a YAML front block matter will be processed by Jekyll. For example: --- layout: post title: &quot;Example Post&quot; --- Examples of what posts looks like can be found in the _posts directory, which includes this post you are reading right now. Posts are the basic blog post layout, which includes a header image, post content, author name, date published, social media sharing links, and related posts. Pages are essentially the post layout without any of the extra features of the posts layout. An example of what pages look like can be found at the documentation page. In addition to the two main layout options above, there are also custom layouts that have been created for the home page and the contacts page. These are simply just page layouts with some Liquid template code. Check out the index.html file in the root directory for what the code looks like. YAML Front Block Matter The recommended YAML front block is: --- layout: title: author: categories: tags: [] image: --- layout specifies which layout to use, title is the page or post title, categories can be used to better organize your posts, tags are used when generating related posts based on the topic of the post, and image specifies which images to use. Have a look at some posts in the _posts directory to see how these variables are set. Features Design Considerations Millennial was designed to be a minimalist theme in order for the focus to remain on your content. For example, links are signified mainly through an underline text-decoration, in order to maximize the perceived affordance of clickability (I originally just wanted to make the links a darker shade of grey). Disqus Millennial supports comments at the end of posts through Disqus. In order to activate Disqus commenting, set disqus.comments to true in the _data/settings.yml file. If you do not have a Disqus account already, you will have to set one up, and create a profile for your website. You will be given a disqus_shortname that will be used to generate the appropriate comments sections for your site. More information on how to set up Disqus. Google Analytics It is possible to track your site statistics through Google Analytics. Similar to Disqus, you will have to create an account for Google Analytics, and enter the correct Google ID for your site under google-ID in the settings.yml file. More information on how to set up Google Analytics. RSS Feeds Atom is supported by default through jekyll-feed. With jekyll-feed, you can set configuration variables such as ‘title’, ‘description’, and ‘author’, in the _config.yml file. RSS 2.0 is also supported through RSS auto-discovery. The rss-feed.xml file (based on the template found at jekyll-rss-feeds) that the feed path points to when using RSS 2.0 is automatically generated based on the appropriate configuration variables found in _data/settings.yml. To use RSS 2.0, ensure the following is done: Uncomment the last two lines in the _config.yml file. In _data/settings.yml, under ‘social’, comment out the rss-square that points to feed.xml, and uncomment the rss-square that points to rss-feed.xml. In _includes/head.html, comment out &amp;lt;link type=&quot;application/atom+xml&quot; rel=&quot;alternate&quot; href=&quot;http://localhost:4000/feed.xml&quot; title=&quot;Millennial&quot; /&amp;gt; and uncomment the line under the RSS 2.0 comment. Social Media Icons All social media icons are courtesy of Font Awesome. You can change which icons appear, as well as the account that they link to, in the settings.yml file in the _data folder. MathJax Millennial comes out of the box with MathJax, which allows you to display mathematical equations in your posts through the use of LaTeX. Syntax Highlighting Millennial provides syntax highlighting through fenced code blocks. Syntax highlighting allows you to display source code in different colors and fonts depending on what programming language is being displayed. You can find the full list of supported programming languages here. Another option is to embed your code through Gist. Markdown As always, Jekyll offers support for GitHub Flavored Markdown, which allows you to format your posts using the Markdown syntax. Examples of these text formatting features can be seen below. You can find this post in the _posts directory as well as the README.md file. Everything Else Check out the Jekyll docs for more info on how to get the most out of Jekyll. File all bugs/feature requests at Jekyll’s GitHub repo. If you have questions, you can ask them on Jekyll Talk. Contributing If you would like to make a feature request, or report a bug or typo in the documentation, then please submit a GitHub issue. If you would like to make a contribution, then feel free to submit a pull request - as a bonus, I will credit all contributors below! If this is your first pull request, it may be helpful to read up on the GitHub Flow first. Millennial has been designed as a base for users to customize and fit to their own unique needs. Please keep this in mind when requesting features and/or submitting pull requests. Some examples of changes that I would love to see are things that would make the site easier to use, or better ways of doing things. Please avoid changes that do not benefit the majority of users. Questions? This theme is completely free and open source software. You may use it however you want, as it is distributed under the MIT License. If you are having any problems, any questions or suggestions, feel free to tweet at me, or file a GitHub issue. Credits Creator Paul Le www.lenpaul.com Twitter GitHub Contributors b-morawiec JainVikas mschaeffner Icons + Demo Images Death to Stock Font Awesome Other Jekyll Free Code Camp Khan Academy License Open sourced under the MIT license.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/city-2.jpg" /></entry><entry><title type="html">Text Formatting</title><link href="http://localhost:4000/sample/text-formatting.html" rel="alternate" type="text/html" title="Text Formatting" /><published>2016-09-09T00:00:00+00:00</published><updated>2016-09-09T00:00:00+00:00</updated><id>http://localhost:4000/sample/text-formatting</id><content type="html" xml:base="http://localhost:4000/sample/text-formatting.html">&lt;h1 id=&quot;markdown-support&quot;&gt;Markdown Support&lt;/h1&gt;
+&lt;p&gt;Open sourced under the &lt;a href=&quot;https://github.com/LeNPaul/Millennial/blob/gh-pages/LICENSE.md&quot;&gt;MIT license&lt;/a&gt;.&lt;/p&gt;</content><author><name>Paul Le</name></author><category term="documentation" /><category term="sample" /><summary type="html">Millennial Millennial is a minimalist Jekyll theme for running a simple, clean, content-focused publishing platform for your publication site or blog through Github Pages, or on your own server. Everything that you will ever need to know about this Jekyll theme is included in the README below, which you can also find in the demo site. Notable features Compatible with GitHub Pages. Support for Jekyll’s built-in Sass/SCSS preprocessor and data files for making customizing easier. Google Analytics support. Commenting support powered by Disqus. Optimized for search engines. LaTeX support through MathJax. Table of Contents Introduction What is Jekyll Never Used Jeykll Before? Installation GitHub Pages Installation Local Installation Directory Structure Starting From Scratch Configuration Sample Posts Site Variables Adding Menu Pages Posts Layouts YAML Front Block Matter Features Design Considerations Disqus Google Analytics RSS Feeds Social Media Icons MathJax Syntax Highlighting Markdown Everything Else Contributing Questions? Credits License Introduction Millennial is a Jekyll theme that was built to be 100% compatible with GitHub Pages. If you are unfamiliar with GitHub Pages, you can check out their documentation for more information. Jonathan McGlone’s guide on creating and hosting a personal site on GitHub is also a good resource. What is Jekyll? Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. Basically, Jekyll takes your page content along with template files and produces a complete website. For more information, visit the official Jekyll site for their documentation. Codecademy also offers a great course on how to deploy a Jekyll site for complete beginners. Never Used Jekyll Before? The beauty of hosting your website on GitHub is that you don’t have to actually have Jekyll installed on your computer. Everything can be done through the GitHub code editor, with minimal knowledge of how to use Jekyll or the command line. All you have to do is add your posts to the _posts directory and edit the _config.yml file to change the site settings. With some rudimentary knowledge of HTML and CSS, you can even modify the site to your liking. This can all be done through the GitHub code editor, which acts like a content management system (CMS). Installation GitHub Pages Installation To start using Jekyll right away with GitHub Pages, fork the Millennial repository on GitHub. From there, you can rename your repository to ‘USERNAME.github.io’, where ‘USERNAME’ is your GitHub username, and edit the settings.yml file in the _data folder to your liking. Ensure that you have a branch named gh-pages. Your website should be ready immediately at ‘http://USERNAME.github.io’. Note: if you are hosting several sites under the same GitHub username, then you will have to use Project Pages instead of User Pages - just change the repository name to something other than ‘http://USERNAME.github.io’. Head over to the _posts directory to view all the posts that are currently on the website, and to see examples of what post files generally look like. You can simply just duplicate the template post and start adding your own content. Local Installation For a full local installation of Millennial, download your own copy of Millennial and unzip it into it’s own directory. From there, open up your favorite command line tool, enter bundle install, and then enter jekyll serve. Your site should be up and running locally at http://localhost:4000. Directory Structure If you are familiar with Jekyll, then the Millennial directory structure shouldn’t be too difficult to navigate. The following some highlights of the differences you might notice between the default directory structure. More information on what these folders and files do can be found in the Jekyll documentation site. Millennial/ ├── _data # Data files | └── settings.yml # Theme settings and custom text ├── _includes # Theme includes ├── _layouts # Theme layouts (see below for details) ├── _posts # Where all your posts will go ├── assets # Style sheets and images are found here | ├── css # Style sheets go here | | └── _sass # Folder containing SCSS files | | └── main.scss # Main SCSS file | | └── syntax.css # Style sheet for code syntax highlighting | └── img # Images go here ├── pages # Category pages ├── _config.yml # Site build settings ├── Gemfile # Ruby Gemfile for managing Jekyll plugins ├── index.md # Home page ├── LICENSE.md # License for this theme ├── README.md # Includes all of the documentation for this theme └── rss-feed.xml # Generates RSS 2.0 file which Jekyll points to Starting From Scratch To completely start from scratch, simply delete all the files in the _posts, assets/img, and pages folder, and add your own content. You may also replace the README.md file with your own README. Everything in the _data folder and _config.yml file can be edited to suit your needs. You may also change the favicon.ico file to your own favicon. Configuration Sample Posts Visit the the demo site to find sample posts that show what different types of text formatting look like. You can find these posts in the _posts folder, which show what the best practices for setting up your own site are. Site Variables To change site build settings, edit the _config.yml file found in the root of your repository, which you can tweak however you like. More information on configuration settings and plugins can be found on the Jekyll documentation site. This is also where you will be able to customize the title, description, and the author/owner of your site. If you are hosting your site on GitHub Pages, then committing a change to the _config.yml file will force a rebuild of your site with Jekyll. Any changes made should be viewable soon after. If you are hosting your site locally, then you must run jekyll serve again for the changes to take place. In the settings.yml file found in the _data folder, you will be able to customize your site settings, such as setting Disqus comments, Google Analytics, what shows up in your menu, and social media information. Adding Menu Pages The menu pages are found in the menu folder in the root directory, and can be added to your menu in the settings.yml file. Posts You will find example posts in your _posts directory. Go ahead and edit any post and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. To add new posts, simply add a file in the _posts directory that follows the convention of YYYY-MM-DD-name-of-post.md and includes the necessary front matter. Take a look at any sample post to get an idea about how it works. If you already have a website built with Jekyll, simply copy over your posts to migrate to Millennial. Layouts There are two main layout options that are included with Millennial: post and page. Layouts are specified through the YAML front block matter. Any file that contains a YAML front block matter will be processed by Jekyll. For example: --- layout: post title: &quot;Example Post&quot; --- Examples of what posts looks like can be found in the _posts directory, which includes this post you are reading right now. Posts are the basic blog post layout, which includes a header image, post content, author name, date published, social media sharing links, and related posts. Pages are essentially the post layout without any of the extra features of the posts layout. An example of what pages look like can be found at the documentation page. In addition to the two main layout options above, there are also custom layouts that have been created for the home page and the contacts page. These are simply just page layouts with some Liquid template code. Check out the index.html file in the root directory for what the code looks like. YAML Front Block Matter The recommended YAML front block is: --- layout: title: author: categories: tags: [] image: --- layout specifies which layout to use, title is the page or post title, categories can be used to better organize your posts, tags are used when generating related posts based on the topic of the post, and image specifies which images to use. Have a look at some posts in the _posts directory to see how these variables are set. Features Design Considerations Millennial was designed to be a minimalist theme in order for the focus to remain on your content. For example, links are signified mainly through an underline text-decoration, in order to maximize the perceived affordance of clickability (I originally just wanted to make the links a darker shade of grey). Disqus Millennial supports comments at the end of posts through Disqus. In order to activate Disqus commenting, set disqus.comments to true in the _data/settings.yml file. If you do not have a Disqus account already, you will have to set one up, and create a profile for your website. You will be given a disqus_shortname that will be used to generate the appropriate comments sections for your site. More information on how to set up Disqus. Google Analytics It is possible to track your site statistics through Google Analytics. Similar to Disqus, you will have to create an account for Google Analytics, and enter the correct Google ID for your site under google-ID in the settings.yml file. More information on how to set up Google Analytics. RSS Feeds Atom is supported by default through jekyll-feed. With jekyll-feed, you can set configuration variables such as ‘title’, ‘description’, and ‘author’, in the _config.yml file. RSS 2.0 is also supported through RSS auto-discovery. The rss-feed.xml file (based on the template found at jekyll-rss-feeds) that the feed path points to when using RSS 2.0 is automatically generated based on the appropriate configuration variables found in _data/settings.yml. To use RSS 2.0, ensure the following is done: Uncomment the last two lines in the _config.yml file. In _data/settings.yml, under ‘social’, comment out the rss-square that points to feed.xml, and uncomment the rss-square that points to rss-feed.xml. In _includes/head.html, comment out &amp;lt;link type=&quot;application/atom+xml&quot; rel=&quot;alternate&quot; href=&quot;http://localhost:4000/feed.xml&quot; title=&quot;LivlyBear&quot; /&amp;gt; and uncomment the line under the RSS 2.0 comment. Social Media Icons All social media icons are courtesy of Font Awesome. You can change which icons appear, as well as the account that they link to, in the settings.yml file in the _data folder. MathJax Millennial comes out of the box with MathJax, which allows you to display mathematical equations in your posts through the use of LaTeX. Syntax Highlighting Millennial provides syntax highlighting through fenced code blocks. Syntax highlighting allows you to display source code in different colors and fonts depending on what programming language is being displayed. You can find the full list of supported programming languages here. Another option is to embed your code through Gist. Markdown As always, Jekyll offers support for GitHub Flavored Markdown, which allows you to format your posts using the Markdown syntax. Examples of these text formatting features can be seen below. You can find this post in the _posts directory as well as the README.md file. Everything Else Check out the Jekyll docs for more info on how to get the most out of Jekyll. File all bugs/feature requests at Jekyll’s GitHub repo. If you have questions, you can ask them on Jekyll Talk. Contributing If you would like to make a feature request, or report a bug or typo in the documentation, then please submit a GitHub issue. If you would like to make a contribution, then feel free to submit a pull request - as a bonus, I will credit all contributors below! If this is your first pull request, it may be helpful to read up on the GitHub Flow first. Millennial has been designed as a base for users to customize and fit to their own unique needs. Please keep this in mind when requesting features and/or submitting pull requests. Some examples of changes that I would love to see are things that would make the site easier to use, or better ways of doing things. Please avoid changes that do not benefit the majority of users. Questions? This theme is completely free and open source software. You may use it however you want, as it is distributed under the MIT License. If you are having any problems, any questions or suggestions, feel free to tweet at me, or file a GitHub issue. Credits Creator Paul Le www.lenpaul.com Twitter GitHub Contributors b-morawiec JainVikas mschaeffner Icons + Demo Images Death to Stock Font Awesome Other Jekyll Free Code Camp Khan Academy License Open sourced under the MIT license.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/city-2.jpg" /></entry><entry><title type="html">Text Formatting</title><link href="http://localhost:4000/sample/text-formatting.html" rel="alternate" type="text/html" title="Text Formatting" /><published>2016-09-09T00:00:00+00:00</published><updated>2016-09-09T00:00:00+00:00</updated><id>http://localhost:4000/sample/text-formatting</id><content type="html" xml:base="http://localhost:4000/sample/text-formatting.html">&lt;h1 id=&quot;markdown-support&quot;&gt;Markdown Support&lt;/h1&gt;
 
 &lt;p&gt;As always, Jekyll offers support for GitHub Flavored Markdown, which allows you to format your posts using the &lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;Markdown syntax&lt;/a&gt;. Examples of these text formatting features can be seen below. You can find this post in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory.&lt;/p&gt;
 
@@ -532,16 +1489,4 @@ image:
   &lt;li&gt;&lt;a href=&quot;https://daringfireball.net/projects/markdown/basics&quot;&gt;Markdown Basics&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.github.com/gfm/&quot;&gt;GitHub Flavoured Markdown Spec&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/basic-writing-and-formatting-syntax/#lists&quot;&gt;Basic writing and formatting syntax&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Paul Le</name></author><category term="sample" /><summary type="html">Markdown Support As always, Jekyll offers support for GitHub Flavored Markdown, which allows you to format your posts using the Markdown syntax. Examples of these text formatting features can be seen below. You can find this post in the _posts directory. Basic Formatting With Markdown, it is possible to emphasize words by making them italicized, using astericks or underscores, or making them bold, using double astericks or double underscores. Of course, you can combine those two formats, with both bold and italicized text, using any combination of the above syntax. You can also add a strikethrough to text using a double tilde. Paragraphs This is what a paragraph looks like. For the purpose of demonstration, the rest of this paragraph and the next paragraph after will mean absolutely nothing. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est. Headings Sometimes it is useful to have different levels of headings to structure your documents. Start lines with # to create headings. Multiple ## in a row denote smaller heading size. The following demonstrate the full range of heading sizes: Heading One (h1) Heading Two (h2) Heading Three (h3) Heading Four (h4) Heading Five (h5) Heading Six (h6) Links You can create an inline link by wrapping link text in square brackets [ ], and then wrapping the URL in parentheses ( ). For example, it is very easy to link to Google!. Blockquotes Blockquotes are useful for denoting quotes, or highlighting a large block of text. Single line blockquote: This quote will change your life. Multi line blockquote with a cite reference: People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I’m actually as proud of the things we haven’t done as the things I have done. Innovation is saying no to 1,000 things. Code and Syntax Highlighting Code blocks are part of the Markdown spec, but syntax highlighting isn’t. However, many renderers - like GitHub or most Jekyll themes - support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. You can find the full list of supported programming languages here. Also, it is possible to do inline code blocks, by wrapping the text in ` ` ` quotations. No language indicated, so no syntax highlighting. def print_hi(name) puts &quot;Hi, #{name}&quot; end print_hi('Tom') #=&amp;gt; prints 'Hi, Tom' to STDOUT. // Example can be run directly in your JavaScript console // Create a function that takes two arguments and returns the sum of those arguments var adder = new Function(&quot;a&quot;, &quot;b&quot;, &quot;return a + b&quot;); // Call the function adder(2, 6); // &amp;gt; 8 Another option is to embed your code through Gist. Unordered and Numbered Lists You can make an unordered and nested list by preceding one or more lines of text with -, *, or +, and indenting sublists. The following lists show the full range of possible list formats. List item one List item one List item one List item two List item three List item four List item two List item three List item four List item two List item three List item four Numbered lists are made by using numbers instead of bullet points. List item one List item one List item one List item two List item three List item four List item two List item three List item four List item two List item three List item four MathJax Example The Schrödinger equation is a partial differential equation that describes how the quantum state of a quantum system changes with time: Joseph-Louis Lagrange was an Italian mathematician and astronomer who was responsible for the formulation of Lagrangian mechanics, which is a reformulation of Newtonian mechanics. Tables Title 1 Title 2 Title 3 Title 4 lorem lorem ipsum lorem ipsum dolor lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit Embedding Plenty of social media sites offer the option of embedding certain parts of their site on your own site, such as YouTube and Twitter: New Collection Inline HTML elements HTML defines a long list of available inline tags, which you can mix with Markdown if you like. A complete list of which can be found on the Mozilla Developer Network. Useful Resources More information on Markdown can be found at the following links: Markdown Here Cheatsheet Quick Markdown Example Markdown Basics GitHub Flavoured Markdown Spec Basic writing and formatting syntax</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/arctic-1.jpg" /></entry><entry><title type="html">Learning Resources</title><link href="http://localhost:4000/facts/learning-resources.html" rel="alternate" type="text/html" title="Learning Resources" /><published>2016-05-05T00:00:00+00:00</published><updated>2016-05-05T00:00:00+00:00</updated><id>http://localhost:4000/facts/learning-resources</id><content type="html" xml:base="http://localhost:4000/facts/learning-resources.html">&lt;p&gt;The beauty of computer programming is that you do not need to formally go to school to learn how to program. You can learn almost everything that you would need to know online, and for free. The following resources are some that I have used personally, that I highly recommend, for anyone looking to learn more about computer programming.&lt;/p&gt;
-
-&lt;h2 id=&quot;free-code-camp&quot;&gt;&lt;a href=&quot;https://www.freecodecamp.org/&quot;&gt;Free Code Camp&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;My personal favourite for learning full stack web development. They offer a great front and back end curriculum that requires you to complete a variety of projects in order to apply the knowledge that you learn during the lessons. As a bonus, at the end of the curriculum you will have a few impressive projects under your belt for your portfolio.&lt;/p&gt;
-
-&lt;h2 id=&quot;codecademy&quot;&gt;&lt;a href=&quot;https://www.codecademy.com/&quot;&gt;Codecademy&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Not only does Codecademy have many great courses on various web development languages such as &lt;a href=&quot;https://www.codecademy.com/learn/learn-html&quot;&gt;HTML&lt;/a&gt;, &lt;a href=&quot;https://www.codecademy.com/learn/learn-css&quot;&gt;CSS&lt;/a&gt;, and &lt;a href=&quot;https://www.codecademy.com/learn/introduction-to-javascript&quot;&gt;JavaScript&lt;/a&gt;, but they even offer a course on &lt;a href=&quot;https://www.codecademy.com/learn/deploy-a-website&quot;&gt;how to deploy a Jekyll site&lt;/a&gt;. If you are completely new to Jekyll, I would recommend working through that course as a great start for learning how to deploy your Jekyll site.&lt;/p&gt;
-
-&lt;h2 id=&quot;khan-academy&quot;&gt;&lt;a href=&quot;https://www.khanacademy.org/&quot;&gt;Khan Academy&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;A great resource not only for learning mathematics (what most people probably know Khan Academy for), but also &lt;a href=&quot;https://www.khanacademy.org/computing/computer-programming&quot;&gt;computer programming&lt;/a&gt;. What Khan Academy offers that is different from the other two above resources is that it offers courses in &lt;a href=&quot;https://www.khanacademy.org/computing/computer-science&quot;&gt;computer science related&lt;/a&gt; topics, such as &lt;a href=&quot;https://www.khanacademy.org/computing/computer-science/algorithms&quot;&gt;algorithms&lt;/a&gt; and &lt;a href=&quot;https://www.khanacademy.org/computing/computer-science/cryptography&quot;&gt;cryptography&lt;/a&gt;. This is unique in that most online resources mostly focus on the programming side of things.&lt;/p&gt;</content><author><name>Paul Le</name></author><category term="documentation" /><category term="sample" /><summary type="html">The beauty of computer programming is that you do not need to formally go to school to learn how to program. You can learn almost everything that you would need to know online, and for free. The following resources are some that I have used personally, that I highly recommend, for anyone looking to learn more about computer programming. Free Code Camp My personal favourite for learning full stack web development. They offer a great front and back end curriculum that requires you to complete a variety of projects in order to apply the knowledge that you learn during the lessons. As a bonus, at the end of the curriculum you will have a few impressive projects under your belt for your portfolio. Codecademy Not only does Codecademy have many great courses on various web development languages such as HTML, CSS, and JavaScript, but they even offer a course on how to deploy a Jekyll site. If you are completely new to Jekyll, I would recommend working through that course as a great start for learning how to deploy your Jekyll site. Khan Academy A great resource not only for learning mathematics (what most people probably know Khan Academy for), but also computer programming. What Khan Academy offers that is different from the other two above resources is that it offers courses in computer science related topics, such as algorithms and cryptography. This is unique in that most online resources mostly focus on the programming side of things.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/arctic-4.jpg" /></entry><entry><title type="html">About the Author</title><link href="http://localhost:4000/facts/about-the-author.html" rel="alternate" type="text/html" title="About the Author" /><published>2016-04-04T00:00:00+00:00</published><updated>2016-04-04T00:00:00+00:00</updated><id>http://localhost:4000/facts/about-the-author</id><content type="html" xml:base="http://localhost:4000/facts/about-the-author.html">&lt;p&gt;Hi there! I’m Paul. I’m a physics major turned programmer. Ever since I first learned how to program while taking a scientific computing for physics course, I have pursued programming as a passion, and as a career. Check out &lt;a href=&quot;https://www.lenpaul.com/&quot;&gt;my personal website&lt;/a&gt; for more information on my other projects (including more Jekyll themes!), as well as some of my writing.&lt;/p&gt;</content><author><name>Paul Le</name></author><category term="sample" /><summary type="html">Hi there! I’m Paul. I’m a physics major turned programmer. Ever since I first learned how to program while taking a scientific computing for physics course, I have pursued programming as a passion, and as a career. Check out my personal website for more information on my other projects (including more Jekyll themes!), as well as some of my writing.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/cuba-4.jpg" /></entry></feed>
+&lt;/ul&gt;</content><author><name>Paul Le</name></author><category term="sample" /><summary type="html">Markdown Support As always, Jekyll offers support for GitHub Flavored Markdown, which allows you to format your posts using the Markdown syntax. Examples of these text formatting features can be seen below. You can find this post in the _posts directory. Basic Formatting With Markdown, it is possible to emphasize words by making them italicized, using astericks or underscores, or making them bold, using double astericks or double underscores. Of course, you can combine those two formats, with both bold and italicized text, using any combination of the above syntax. You can also add a strikethrough to text using a double tilde. Paragraphs This is what a paragraph looks like. For the purpose of demonstration, the rest of this paragraph and the next paragraph after will mean absolutely nothing. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est. Headings Sometimes it is useful to have different levels of headings to structure your documents. Start lines with # to create headings. Multiple ## in a row denote smaller heading size. The following demonstrate the full range of heading sizes: Heading One (h1) Heading Two (h2) Heading Three (h3) Heading Four (h4) Heading Five (h5) Heading Six (h6) Links You can create an inline link by wrapping link text in square brackets [ ], and then wrapping the URL in parentheses ( ). For example, it is very easy to link to Google!. Blockquotes Blockquotes are useful for denoting quotes, or highlighting a large block of text. Single line blockquote: This quote will change your life. Multi line blockquote with a cite reference: People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I’m actually as proud of the things we haven’t done as the things I have done. Innovation is saying no to 1,000 things. Code and Syntax Highlighting Code blocks are part of the Markdown spec, but syntax highlighting isn’t. However, many renderers - like GitHub or most Jekyll themes - support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer. You can find the full list of supported programming languages here. Also, it is possible to do inline code blocks, by wrapping the text in ` ` ` quotations. No language indicated, so no syntax highlighting. def print_hi(name) puts &quot;Hi, #{name}&quot; end print_hi('Tom') #=&amp;gt; prints 'Hi, Tom' to STDOUT. // Example can be run directly in your JavaScript console // Create a function that takes two arguments and returns the sum of those arguments var adder = new Function(&quot;a&quot;, &quot;b&quot;, &quot;return a + b&quot;); // Call the function adder(2, 6); // &amp;gt; 8 Another option is to embed your code through Gist. Unordered and Numbered Lists You can make an unordered and nested list by preceding one or more lines of text with -, *, or +, and indenting sublists. The following lists show the full range of possible list formats. List item one List item one List item one List item two List item three List item four List item two List item three List item four List item two List item three List item four Numbered lists are made by using numbers instead of bullet points. List item one List item one List item one List item two List item three List item four List item two List item three List item four List item two List item three List item four MathJax Example The Schrödinger equation is a partial differential equation that describes how the quantum state of a quantum system changes with time: Joseph-Louis Lagrange was an Italian mathematician and astronomer who was responsible for the formulation of Lagrangian mechanics, which is a reformulation of Newtonian mechanics. Tables Title 1 Title 2 Title 3 Title 4 lorem lorem ipsum lorem ipsum dolor lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit lorem ipsum dolor sit Embedding Plenty of social media sites offer the option of embedding certain parts of their site on your own site, such as YouTube and Twitter: New Collection Inline HTML elements HTML defines a long list of available inline tags, which you can mix with Markdown if you like. A complete list of which can be found on the Mozilla Developer Network. Useful Resources More information on Markdown can be found at the following links: Markdown Here Cheatsheet Quick Markdown Example Markdown Basics GitHub Flavoured Markdown Spec Basic writing and formatting syntax</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/arctic-1.jpg" /></entry></feed>

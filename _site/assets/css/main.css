@@ -111,7 +111,7 @@ th, td {
   Site container
 */
 .container {
-  width: 1100px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto; }
 
@@ -125,7 +125,7 @@ th, td {
   width: 1080px; }
 
 .posts-wrapper h1 {
-  margin: 20px 0px 5px; }
+  margin: 20px 0px 20px; }
 
 @media (max-width: 1100px) {
   .container {
@@ -205,7 +205,7 @@ th, td {
   margin-bottom: 10px; }
 
 .page-content {
-  width: 600px;
+  width: 720px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -222,7 +222,7 @@ th, td {
   align: middle;
   margin: 5px auto 25px;
   display: block;
-  max-width: 600px; }
+  max-width: 720px; }
 
 @media (max-width: 1100px) {
   .page-content {
@@ -274,8 +274,8 @@ th, td {
 
 .related-thumbnail {
   position: relative;
-  width: 600px;
-  height: 200px;
+  width: 720px;
+  height: 300px;
   overflow: hidden; }
 
 .related img {
@@ -290,7 +290,7 @@ th, td {
 
 .related-title {
   float: right;
-  padding-bottom: .5rem;
+  padding: .5rem 0 .5rem;
   font-family: "Roboto", sans-serif; }
 
 @media (max-width: 1100px) {
@@ -301,13 +301,13 @@ th, td {
     width: 95vw; } }
 .site-header {
   min-height: 56px;
-  width: 1100px;
+  width: 100%;
   position: fixed;
   background-color: white;
   box-shadow: 0 5px 6px -6px #bbb;
   z-index: 100; }
 
-@media (max-width: 1100px) {
+@media (max-width: 1080px) {
   .site-header {
     min-height: 56px;
     width: 95vw;
@@ -391,7 +391,7 @@ th, td {
   text-align: center;
   min-height: 56px;
   line-height: 45px;
-  width: 1100px; }
+  width: inherit; }
 
 .footer a {
   color: black;

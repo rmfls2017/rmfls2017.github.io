@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <title>
+    
+      2019.10.11 - Interview (Python Backend Position) | LivlyBear
+    
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <!-- Use Atom -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="LivlyBear" />
+  <!-- RSS-v2.0
+  <link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="LivlyBear | a Jekyll theme for running a blog"/>
+  //-->
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <!-- Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150064661-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150064661-1');
+</script>
+
+
+  <!-- Google tag manager -->
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJR8MJ4');</script>
+<!-- End Google Tag Manager -->
+
+  <!-- Use Jekyll SEO plugin -->
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>2019.10.11 - Interview (Python Backend Position) | LivlyBear</title>
+<meta name="generator" content="Jekyll v3.6.3" />
+<meta property="og:title" content="2019.10.11 - Interview (Python Backend Position)" />
+<meta name="author" content="JIWAN YE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="29cm 면접 진행 복기 python 을 주 언어로 사용하는 백엔드 개발자 포지션으로 지원 순서 면접 진행하기에 앞서 선행 과제를 내줌 과제내용은 python 웹 프레임워크인 Django 로 RESTful API 구현 (제한사항: Django REST Framework 사용금지) 데드라인은 10월 4일까지 총 면접시간: 40m 프로젝트 (제출한 과제를 토대로 코드리뷰 진행) 면접 들어가기에 앞서 python, django 의 이해도(숙련도)는 많은 얘기를 하지 않겠다고 먼저 언급 외래키에 대해서 default 값을 null 로 잡아놓은 이유는 무엇인가 외래키의 특성중 Cascade 란 특성을 설정했는데 이에 대해서 설명 view 단 클래스 작성시 데코레이터를 사용한 이유는 무엇인가 CRUD 작성 시 레코드 삭제를 하게되면 물리적 삭제가 큰 문제가 없는가 답변: * 기존에 주어진 데이터모델링을 바탕으로 sqlite 를 사용하여 제작함 (회사측에서 ERD 제공) * Django 에서 프로젝트 빌드할 시 ORM 쪽에서 에러가 발생하여 null 로 설정 * CRUD 를 작성할 때 &#39;D&#39;(Delete) 를 직접적 삭제(물리적 삭제)로 짜놓았고 해당코드를 수정하지 못함 * 논리적 삭제가 있으며 테이블 내 데이터의 유효값을 표시하는 컬럼을 하나 추가한 뒤 그 값에 따라서 판단을 진행 * 서로 관계가 맺어져 있는 테이블에서 PK 의 속성을 가진 테이블 안에 레코드가 변경되거나 삭제되면 그에 따라서 종속되는 테이블도 영항을 미친다는 특성 * 데코레이터 사용은 프로젝트 작성 시 pycharm 이라는 에디터를 사용했고 에디터 측에서 Suggestion 으로 계속해서 나타났기 때문에 데코레이터를 사용 (@classmethod 사용에 관한 질문과 답변) 추가질문: 논리적 삭제를 알고있음에도 그렇게 하지 않은 이유는 무엇인가 default = null 은 먼저 등록하고 나중에 데이터 관계를 형성하기 위함이 아니였나 추가질문 답변: * 과제 당시 데이터 모델링을 수정하거나 그러진 못했다 (시간이 없었다는 핑계를 돌려서...) * 프로젝트 빌드 시 문제때문에 그러한 것이였고 그렇게 생각한 의도한 것이 아니였다 이력서에 대한 질문과 응답 이력서에 있는 포트폴리오와 작업에 대한 설명 REST API 개발 구현은 어떤식으로 이루어졌나? python 푸시 서버를 구현했는데 이력서 안에 python 버전을 적시해놓은 이유가 있는가? (python 2.7 을 적어놨음) REST API 와 GraphQL 이 같이 적혀있는데 이에 대해 설명해줄수 있는가? GraphQL 을 도입한 계기는 무엇인가? 답변: * GraphQL 과 Apollo 를 사용하여 개발 * 다른 의미는 없지만 python 3 버전과 2 버전의 차이가 많아서 적어놓은 것 * Refactoring 을 진행하면서 Rest api 를 구현했고 (비지니스 진행을 위해) 구현한 소스를 GraphQL 로 변경하면서 코딩을 진행 (하나의 프로젝트로 진행한 것이 아님) * Rest API 를 지속적으로 개발하기 위해서는 기능에 맞는 새로운 URI 를 설정해야하고 메인 버전의 변경을 위해선 전체적인 코드리뷰와 테스트를 다시해보아야 하는 것으로 그 측면에 있어서 GraphQL 은 이러한 문제를 해결해줄수 있는 방안이였으며, 지속적인 유지보수를 위해 도입을 추진 그 외 평소에 공부하는 방법을 알려달라 관심사는 어떤 분야인가? python 이 싱글 쓰레드의 특성을 가지고 있어 여러가지의 작업을 동시에 진행할 수 없는 문제가 있는데 이에 대한 해결방안은 어떤것이 있는가? 전 직장에서 짧은 기간 있었는데 어떠한 이유때문인가? 답변: * 새로운 지식에 관하여 서점에 들려 책을 많이 읽어보는 편 * 프로젝트 진행 중(회사 업무로 인한 문제)가 발생시 해당 문제가 되는 공식문서를 파악하여 환경에 대해 이해하려 함 * 매번 관심사는 달라지고, 이번에 지원한 백엔드 개발자로 현재 관심사는 python 쪽에 있다. 여러가지 언어에도 관심이 있지만 주로 커뮤니티에서 유행하거나 많이 언급되는 단어에 관심이 가는 편이며 하나에 몰두해서 관심이 가는 것은 아직 정해지지 않았다. * 사내에 있었던 일에 대해 솔직하게 답함 (숨기는 것 보다 솔직하게 말하는 편이 좋다고 생각하여 여과없이 다 말함, 팀과 대표의 마찰부터 시작해서 CTO 의 부당한 지시 및 제대로 이루어지지 않는 프로젝트 마무리 등...) 느낀점 다른 회사에서 진행했던 면접보다 분위기가 부드러운 회사였다. 개발자분들도 최대한 어려운 질문을 풀어서 하려고했고 딱딱한 자세로 물어보거나 떠보는 듯한 질문은 하지않았다. 내가 스스로 아쉽게 생각한 점은 다른 면접이 같은 주에 있어서 하나의 면접을 준비하고(그 면접은 잘못된 방법으로 준비했지만…) 제시한 과제를 수행해야 했으므로 시간적 압박과 스트레스가 있었다. 프로젝트에 대한 완성도는 떨어지고 그 만큼 리뷰를 진행할 때 묻어나오지 않았나 싶다. 또한 면접시 얘기하면서 솔직함이 모든 문제의 답변이 되지 않는 생각이 든다. 총평 프로젝트로 과제를 해본 경험이었다. 요구사항에 따라 과제를 진행했고 그 만큼 요구사항을 잘 분석하여 구현했는지 평가하는 자리가 되었다. 추가글 2019.10.25 결과 탈락. 1주일 안에 결과를 알려준다고 면접시 말해주었지만 2주째 보류한 상태에서 결과를 받았다 살짝 늦어진다고 생각하면서 면접에 붙는건가 생각하다가 그 생각은 수포로 돌아갔다…" />
+<meta property="og:description" content="29cm 면접 진행 복기 python 을 주 언어로 사용하는 백엔드 개발자 포지션으로 지원 순서 면접 진행하기에 앞서 선행 과제를 내줌 과제내용은 python 웹 프레임워크인 Django 로 RESTful API 구현 (제한사항: Django REST Framework 사용금지) 데드라인은 10월 4일까지 총 면접시간: 40m 프로젝트 (제출한 과제를 토대로 코드리뷰 진행) 면접 들어가기에 앞서 python, django 의 이해도(숙련도)는 많은 얘기를 하지 않겠다고 먼저 언급 외래키에 대해서 default 값을 null 로 잡아놓은 이유는 무엇인가 외래키의 특성중 Cascade 란 특성을 설정했는데 이에 대해서 설명 view 단 클래스 작성시 데코레이터를 사용한 이유는 무엇인가 CRUD 작성 시 레코드 삭제를 하게되면 물리적 삭제가 큰 문제가 없는가 답변: * 기존에 주어진 데이터모델링을 바탕으로 sqlite 를 사용하여 제작함 (회사측에서 ERD 제공) * Django 에서 프로젝트 빌드할 시 ORM 쪽에서 에러가 발생하여 null 로 설정 * CRUD 를 작성할 때 &#39;D&#39;(Delete) 를 직접적 삭제(물리적 삭제)로 짜놓았고 해당코드를 수정하지 못함 * 논리적 삭제가 있으며 테이블 내 데이터의 유효값을 표시하는 컬럼을 하나 추가한 뒤 그 값에 따라서 판단을 진행 * 서로 관계가 맺어져 있는 테이블에서 PK 의 속성을 가진 테이블 안에 레코드가 변경되거나 삭제되면 그에 따라서 종속되는 테이블도 영항을 미친다는 특성 * 데코레이터 사용은 프로젝트 작성 시 pycharm 이라는 에디터를 사용했고 에디터 측에서 Suggestion 으로 계속해서 나타났기 때문에 데코레이터를 사용 (@classmethod 사용에 관한 질문과 답변) 추가질문: 논리적 삭제를 알고있음에도 그렇게 하지 않은 이유는 무엇인가 default = null 은 먼저 등록하고 나중에 데이터 관계를 형성하기 위함이 아니였나 추가질문 답변: * 과제 당시 데이터 모델링을 수정하거나 그러진 못했다 (시간이 없었다는 핑계를 돌려서...) * 프로젝트 빌드 시 문제때문에 그러한 것이였고 그렇게 생각한 의도한 것이 아니였다 이력서에 대한 질문과 응답 이력서에 있는 포트폴리오와 작업에 대한 설명 REST API 개발 구현은 어떤식으로 이루어졌나? python 푸시 서버를 구현했는데 이력서 안에 python 버전을 적시해놓은 이유가 있는가? (python 2.7 을 적어놨음) REST API 와 GraphQL 이 같이 적혀있는데 이에 대해 설명해줄수 있는가? GraphQL 을 도입한 계기는 무엇인가? 답변: * GraphQL 과 Apollo 를 사용하여 개발 * 다른 의미는 없지만 python 3 버전과 2 버전의 차이가 많아서 적어놓은 것 * Refactoring 을 진행하면서 Rest api 를 구현했고 (비지니스 진행을 위해) 구현한 소스를 GraphQL 로 변경하면서 코딩을 진행 (하나의 프로젝트로 진행한 것이 아님) * Rest API 를 지속적으로 개발하기 위해서는 기능에 맞는 새로운 URI 를 설정해야하고 메인 버전의 변경을 위해선 전체적인 코드리뷰와 테스트를 다시해보아야 하는 것으로 그 측면에 있어서 GraphQL 은 이러한 문제를 해결해줄수 있는 방안이였으며, 지속적인 유지보수를 위해 도입을 추진 그 외 평소에 공부하는 방법을 알려달라 관심사는 어떤 분야인가? python 이 싱글 쓰레드의 특성을 가지고 있어 여러가지의 작업을 동시에 진행할 수 없는 문제가 있는데 이에 대한 해결방안은 어떤것이 있는가? 전 직장에서 짧은 기간 있었는데 어떠한 이유때문인가? 답변: * 새로운 지식에 관하여 서점에 들려 책을 많이 읽어보는 편 * 프로젝트 진행 중(회사 업무로 인한 문제)가 발생시 해당 문제가 되는 공식문서를 파악하여 환경에 대해 이해하려 함 * 매번 관심사는 달라지고, 이번에 지원한 백엔드 개발자로 현재 관심사는 python 쪽에 있다. 여러가지 언어에도 관심이 있지만 주로 커뮤니티에서 유행하거나 많이 언급되는 단어에 관심이 가는 편이며 하나에 몰두해서 관심이 가는 것은 아직 정해지지 않았다. * 사내에 있었던 일에 대해 솔직하게 답함 (숨기는 것 보다 솔직하게 말하는 편이 좋다고 생각하여 여과없이 다 말함, 팀과 대표의 마찰부터 시작해서 CTO 의 부당한 지시 및 제대로 이루어지지 않는 프로젝트 마무리 등...) 느낀점 다른 회사에서 진행했던 면접보다 분위기가 부드러운 회사였다. 개발자분들도 최대한 어려운 질문을 풀어서 하려고했고 딱딱한 자세로 물어보거나 떠보는 듯한 질문은 하지않았다. 내가 스스로 아쉽게 생각한 점은 다른 면접이 같은 주에 있어서 하나의 면접을 준비하고(그 면접은 잘못된 방법으로 준비했지만…) 제시한 과제를 수행해야 했으므로 시간적 압박과 스트레스가 있었다. 프로젝트에 대한 완성도는 떨어지고 그 만큼 리뷰를 진행할 때 묻어나오지 않았나 싶다. 또한 면접시 얘기하면서 솔직함이 모든 문제의 답변이 되지 않는 생각이 든다. 총평 프로젝트로 과제를 해본 경험이었다. 요구사항에 따라 과제를 진행했고 그 만큼 요구사항을 잘 분석하여 구현했는지 평가하는 자리가 되었다. 추가글 2019.10.25 결과 탈락. 1주일 안에 결과를 알려준다고 면접시 말해주었지만 2주째 보류한 상태에서 결과를 받았다 살짝 늦어진다고 생각하면서 면접에 붙는건가 생각하다가 그 생각은 수포로 돌아갔다…" />
+<link rel="canonical" href="http://localhost:4000/interviews/interview-3.html" />
+<meta property="og:url" content="http://localhost:4000/interviews/interview-3.html" />
+<meta property="og:site_name" content="LivlyBear" />
+<meta property="og:image" content="http://localhost:4000/interview-vector-image.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-10-11T00:00:00+00:00" />
+<script type="application/ld+json">
+{"datePublished":"2019-10-11T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/interviews/interview-3.html"},"@type":"BlogPosting","image":"http://localhost:4000/interview-vector-image.jpg","url":"http://localhost:4000/interviews/interview-3.html","author":{"@type":"Person","name":"JIWAN YE"},"headline":"2019.10.11 - Interview (Python Backend Position)","description":"29cm 면접 진행 복기 python 을 주 언어로 사용하는 백엔드 개발자 포지션으로 지원 순서 면접 진행하기에 앞서 선행 과제를 내줌 과제내용은 python 웹 프레임워크인 Django 로 RESTful API 구현 (제한사항: Django REST Framework 사용금지) 데드라인은 10월 4일까지 총 면접시간: 40m 프로젝트 (제출한 과제를 토대로 코드리뷰 진행) 면접 들어가기에 앞서 python, django 의 이해도(숙련도)는 많은 얘기를 하지 않겠다고 먼저 언급 외래키에 대해서 default 값을 null 로 잡아놓은 이유는 무엇인가 외래키의 특성중 Cascade 란 특성을 설정했는데 이에 대해서 설명 view 단 클래스 작성시 데코레이터를 사용한 이유는 무엇인가 CRUD 작성 시 레코드 삭제를 하게되면 물리적 삭제가 큰 문제가 없는가 답변: * 기존에 주어진 데이터모델링을 바탕으로 sqlite 를 사용하여 제작함 (회사측에서 ERD 제공) * Django 에서 프로젝트 빌드할 시 ORM 쪽에서 에러가 발생하여 null 로 설정 * CRUD 를 작성할 때 &#39;D&#39;(Delete) 를 직접적 삭제(물리적 삭제)로 짜놓았고 해당코드를 수정하지 못함 * 논리적 삭제가 있으며 테이블 내 데이터의 유효값을 표시하는 컬럼을 하나 추가한 뒤 그 값에 따라서 판단을 진행 * 서로 관계가 맺어져 있는 테이블에서 PK 의 속성을 가진 테이블 안에 레코드가 변경되거나 삭제되면 그에 따라서 종속되는 테이블도 영항을 미친다는 특성 * 데코레이터 사용은 프로젝트 작성 시 pycharm 이라는 에디터를 사용했고 에디터 측에서 Suggestion 으로 계속해서 나타났기 때문에 데코레이터를 사용 (@classmethod 사용에 관한 질문과 답변) 추가질문: 논리적 삭제를 알고있음에도 그렇게 하지 않은 이유는 무엇인가 default = null 은 먼저 등록하고 나중에 데이터 관계를 형성하기 위함이 아니였나 추가질문 답변: * 과제 당시 데이터 모델링을 수정하거나 그러진 못했다 (시간이 없었다는 핑계를 돌려서...) * 프로젝트 빌드 시 문제때문에 그러한 것이였고 그렇게 생각한 의도한 것이 아니였다 이력서에 대한 질문과 응답 이력서에 있는 포트폴리오와 작업에 대한 설명 REST API 개발 구현은 어떤식으로 이루어졌나? python 푸시 서버를 구현했는데 이력서 안에 python 버전을 적시해놓은 이유가 있는가? (python 2.7 을 적어놨음) REST API 와 GraphQL 이 같이 적혀있는데 이에 대해 설명해줄수 있는가? GraphQL 을 도입한 계기는 무엇인가? 답변: * GraphQL 과 Apollo 를 사용하여 개발 * 다른 의미는 없지만 python 3 버전과 2 버전의 차이가 많아서 적어놓은 것 * Refactoring 을 진행하면서 Rest api 를 구현했고 (비지니스 진행을 위해) 구현한 소스를 GraphQL 로 변경하면서 코딩을 진행 (하나의 프로젝트로 진행한 것이 아님) * Rest API 를 지속적으로 개발하기 위해서는 기능에 맞는 새로운 URI 를 설정해야하고 메인 버전의 변경을 위해선 전체적인 코드리뷰와 테스트를 다시해보아야 하는 것으로 그 측면에 있어서 GraphQL 은 이러한 문제를 해결해줄수 있는 방안이였으며, 지속적인 유지보수를 위해 도입을 추진 그 외 평소에 공부하는 방법을 알려달라 관심사는 어떤 분야인가? python 이 싱글 쓰레드의 특성을 가지고 있어 여러가지의 작업을 동시에 진행할 수 없는 문제가 있는데 이에 대한 해결방안은 어떤것이 있는가? 전 직장에서 짧은 기간 있었는데 어떠한 이유때문인가? 답변: * 새로운 지식에 관하여 서점에 들려 책을 많이 읽어보는 편 * 프로젝트 진행 중(회사 업무로 인한 문제)가 발생시 해당 문제가 되는 공식문서를 파악하여 환경에 대해 이해하려 함 * 매번 관심사는 달라지고, 이번에 지원한 백엔드 개발자로 현재 관심사는 python 쪽에 있다. 여러가지 언어에도 관심이 있지만 주로 커뮤니티에서 유행하거나 많이 언급되는 단어에 관심이 가는 편이며 하나에 몰두해서 관심이 가는 것은 아직 정해지지 않았다. * 사내에 있었던 일에 대해 솔직하게 답함 (숨기는 것 보다 솔직하게 말하는 편이 좋다고 생각하여 여과없이 다 말함, 팀과 대표의 마찰부터 시작해서 CTO 의 부당한 지시 및 제대로 이루어지지 않는 프로젝트 마무리 등...) 느낀점 다른 회사에서 진행했던 면접보다 분위기가 부드러운 회사였다. 개발자분들도 최대한 어려운 질문을 풀어서 하려고했고 딱딱한 자세로 물어보거나 떠보는 듯한 질문은 하지않았다. 내가 스스로 아쉽게 생각한 점은 다른 면접이 같은 주에 있어서 하나의 면접을 준비하고(그 면접은 잘못된 방법으로 준비했지만…) 제시한 과제를 수행해야 했으므로 시간적 압박과 스트레스가 있었다. 프로젝트에 대한 완성도는 떨어지고 그 만큼 리뷰를 진행할 때 묻어나오지 않았나 싶다. 또한 면접시 얘기하면서 솔직함이 모든 문제의 답변이 되지 않는 생각이 든다. 총평 프로젝트로 과제를 해본 경험이었다. 요구사항에 따라 과제를 진행했고 그 만큼 요구사항을 잘 분석하여 구현했는지 평가하는 자리가 되었다. 추가글 2019.10.25 결과 탈락. 1주일 안에 결과를 알려준다고 면접시 말해주었지만 2주째 보류한 상태에서 결과를 받았다 살짝 늦어진다고 생각하면서 면접에 붙는건가 생각하다가 그 생각은 수포로 돌아갔다…","dateModified":"2019-10-11T00:00:00+00:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+<body>
+
+<div class="container">
+  <header class="site-header">
+  <h3 class="site-title">
+    <a href="/">LivlyBear</a>
+  </h3>
+  <nav class="menu-list">
+    
+      <a href="/pages/interview.html" class="menu-link">Interview</a>
+    
+
+    
+      <a href="https://www.facebook.com/rmfls2015" class="menu-link" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    
+      <a href="mailto:rnfls2012@gmail.com" class="menu-link" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    
+  </nav>
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    <div class="dropdown-content">
+      
+        <a href="/pages/interview.html" class="menu-link">Interview</a>
+      
+
+      
+        <a href="https://www.facebook.com/rmfls2015" class="menu-link" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      
+        <a href="mailto:rnfls2012@gmail.com" class="menu-link" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      
+    </div>
+  </div>
+</header>
+
+  <div class="posts-wrapper">
+    <div class="page-content">
+  <h1>
+    2019.10.11 - Interview (Python Backend Position)
+  </h1>
+
+  <span class="post-date">
+    Written on
+    
+    October
+    11th,
+    2019
+    by
+    
+      JIWAN YE
+    
+  </span>
+
+  
+    <div class="featured-image">
+      <img src="/assets/img/interview-vector-image.jpg">
+    </div>
+  
+
+  <article>
+    <p>29cm</p>
+
+<h2 id="면접-진행-복기">면접 진행 복기</h2>
+
+<p>python 을 주 언어로 사용하는 백엔드 개발자 포지션으로 지원</p>
+
+<h3 id="순서">순서</h3>
+
+<p>면접 진행하기에 앞서 선행 과제를 내줌</p>
+
+<p>과제내용은 python 웹 프레임워크인 Django 로 RESTful API 구현 (제한사항: Django REST Framework 사용금지)</p>
+
+<p>데드라인은 10월 4일까지</p>
+
+<p>총 면접시간: <strong>40m</strong></p>
+
+<ol>
+  <li>
+    <p>프로젝트 (제출한 과제를 토대로 코드리뷰 진행)</p>
+
+    <p>면접 들어가기에 앞서 python, django 의 이해도(숙련도)는 많은 얘기를 하지 않겠다고 먼저 언급</p>
+
+    <ul>
+      <li>
+        <p>외래키에 대해서 default 값을 null 로 잡아놓은 이유는 무엇인가</p>
+      </li>
+      <li>
+        <p>외래키의 특성중 Cascade 란 특성을 설정했는데 이에 대해서 설명</p>
+      </li>
+      <li>
+        <p>view 단 클래스 작성시 데코레이터를 사용한 이유는 무엇인가</p>
+      </li>
+      <li>
+        <p>CRUD 작성 시 레코드 삭제를 하게되면 물리적 삭제가 큰 문제가 없는가</p>
+      </li>
+    </ul>
+
+    <p>답변:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> * 기존에 주어진 데이터모델링을 바탕으로 sqlite 를 사용하여 제작함 (회사측에서 ERD 제공)
+
+ * Django 에서 프로젝트 빌드할 시 ORM 쪽에서 에러가 발생하여 null 로 설정
+
+ * CRUD 를 작성할 때 'D'(Delete) 를 직접적 삭제(물리적 삭제)로 짜놓았고 해당코드를 수정하지 못함
+
+ * 논리적 삭제가 있으며 테이블 내 데이터의 유효값을 표시하는 컬럼을 하나 추가한 뒤 그 값에 따라서 판단을 진행
+
+ * 서로 관계가 맺어져 있는 테이블에서 PK 의 속성을 가진 테이블 안에 레코드가 변경되거나 삭제되면 그에 따라서 종속되는 테이블도 영항을 미친다는 특성
+
+ * 데코레이터 사용은 프로젝트 작성 시 pycharm 이라는 에디터를 사용했고 에디터 측에서 Suggestion 으로 계속해서 나타났기 때문에 데코레이터를 사용 (@classmethod 사용에 관한 질문과 답변)
+</code></pre></div>    </div>
+
+    <p>추가질문:</p>
+
+    <ul>
+      <li>
+        <p>논리적 삭제를 알고있음에도 그렇게 하지 않은 이유는 무엇인가</p>
+      </li>
+      <li>
+        <p>default = null 은 먼저 등록하고 나중에 데이터 관계를 형성하기 위함이 아니였나</p>
+      </li>
+    </ul>
+
+    <p>추가질문 답변:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> * 과제 당시 데이터 모델링을 수정하거나 그러진 못했다 (시간이 없었다는 핑계를 돌려서...)
+
+ * 프로젝트 빌드 시 문제때문에 그러한 것이였고 그렇게 생각한 의도한 것이 아니였다
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>이력서에 대한 질문과 응답</p>
+
+    <p>이력서에 있는 포트폴리오와 작업에 대한 설명</p>
+
+    <ul>
+      <li>
+        <p>REST API 개발 구현은 어떤식으로 이루어졌나?</p>
+      </li>
+      <li>
+        <p>python 푸시 서버를 구현했는데 이력서 안에 python 버전을 적시해놓은 이유가 있는가? (python 2.7 을 적어놨음)</p>
+      </li>
+      <li>
+        <p>REST API 와 GraphQL 이 같이 적혀있는데 이에 대해 설명해줄수 있는가?</p>
+      </li>
+      <li>
+        <p>GraphQL 을 도입한 계기는 무엇인가?</p>
+      </li>
+    </ul>
+
+    <p>답변:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> * GraphQL 과 Apollo 를 사용하여 개발
+
+ * 다른 의미는 없지만 python 3 버전과 2 버전의 차이가 많아서 적어놓은 것
+
+ * Refactoring 을 진행하면서 Rest api 를 구현했고 (비지니스 진행을 위해) 구현한 소스를 GraphQL 로 변경하면서 코딩을 진행 (하나의 프로젝트로 진행한 것이 아님)
+
+ * Rest API 를 지속적으로 개발하기 위해서는 기능에 맞는 새로운 URI 를 설정해야하고 메인 버전의 변경을 위해선 전체적인 코드리뷰와 테스트를 다시해보아야 하는 것으로 그 측면에 있어서 GraphQL 은 이러한 문제를 해결해줄수 있는 방안이였으며, 지속적인 유지보수를 위해 도입을 추진
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>그 외</p>
+
+    <ul>
+      <li>
+        <p>평소에 공부하는 방법을 알려달라</p>
+      </li>
+      <li>
+        <p>관심사는 어떤 분야인가?</p>
+      </li>
+      <li>
+        <p>python 이 싱글 쓰레드의 특성을 가지고 있어 여러가지의 작업을 동시에 진행할 수 없는 문제가 있는데 이에 대한 해결방안은 어떤것이 있는가?</p>
+      </li>
+      <li>
+        <p>전 직장에서 짧은 기간 있었는데 어떠한 이유때문인가?</p>
+      </li>
+    </ul>
+
+    <p>답변:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> * 새로운 지식에 관하여 서점에 들려 책을 많이 읽어보는 편
+
+ * 프로젝트 진행 중(회사 업무로 인한 문제)가 발생시 해당 문제가 되는 공식문서를 파악하여 환경에 대해 이해하려 함
+
+ * 매번 관심사는 달라지고, 이번에 지원한 백엔드 개발자로 현재 관심사는 python 쪽에 있다. 여러가지 언어에도 관심이 있지만 주로 커뮤니티에서 유행하거나 많이 언급되는 단어에 관심이 가는 편이며 하나에 몰두해서 관심이 가는 것은 아직 정해지지 않았다.
+
+ * 사내에 있었던 일에 대해 솔직하게 답함 (숨기는 것 보다 솔직하게 말하는 편이 좋다고 생각하여 여과없이 다 말함, 팀과 대표의 마찰부터 시작해서 CTO 의 부당한 지시 및 제대로 이루어지지 않는 프로젝트 마무리 등...)
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="느낀점">느낀점</h3>
+
+<p>다른 회사에서 진행했던 면접보다 분위기가 부드러운 회사였다.</p>
+
+<p>개발자분들도 최대한 어려운 질문을 풀어서 하려고했고 딱딱한 자세로 물어보거나 떠보는 듯한 질문은 하지않았다.</p>
+
+<p>내가 스스로 아쉽게 생각한 점은 다른 면접이 같은 주에 있어서 하나의 면접을 준비하고(그 면접은 잘못된 방법으로 준비했지만…) 제시한 과제를 수행해야 했으므로 시간적 압박과 스트레스가 있었다.</p>
+
+<p>프로젝트에 대한 완성도는 떨어지고 그 만큼 리뷰를 진행할 때 묻어나오지 않았나 싶다.</p>
+
+<p>또한 면접시 얘기하면서 솔직함이 모든 문제의 답변이 되지 않는 생각이 든다.</p>
+
+<h3 id="총평">총평</h3>
+
+<p>프로젝트로 과제를 해본 경험이었다.</p>
+
+<p>요구사항에 따라 과제를 진행했고 그 만큼 요구사항을 잘 분석하여 구현했는지 평가하는 자리가 되었다.</p>
+
+<hr />
+
+<h3 id="추가글">추가글</h3>
+
+<p>2019.10.25</p>
+
+<p>결과 탈락.</p>
+
+<p>1주일 안에 결과를 알려준다고 면접시 말해주었지만 2주째 보류한 상태에서 결과를 받았다</p>
+
+<p>살짝 늦어진다고 생각하면서 면접에 붙는건가 생각하다가 그 생각은 수포로 돌아갔다…</p>
+
+  </article>
+
+  <div class="post-share">
+    <div class="post-date">Feel free to share!</div>
+    <div class="sharing-icons">
+      <a href="https://twitter.com/intent/tweet?text=2019.10.11 - Interview (Python Backend Position)&amp;url=/interviews/interview-3.html" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/interviews/interview-3.html&amp;title=2019.10.11 - Interview (Python Backend Position)" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://plus.google.com/share?url=/interviews/interview-3.html" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <div class="related">
+    <h2>You may also enjoy...</h2>
+    
+    <ul class="related-posts">
+      
+        
+          
+            <li>
+              <h3>
+                <a href="/interviews/interview-6.html">
+                  <div class="related-thumbnail">
+                    
+                      <img src="/assets/img/interview-vector-image.jpg">
+                    
+                  </div>
+                  <div class="related-title">
+                    2019.11.04 - Interview (Junior Backend Developer Position)
+                  </div>
+                  <!--<small>November 4, 2019</small>-->
+                </a>
+              </h3>
+            </li>
+            
+          
+        
+          
+            <li>
+              <h3>
+                <a href="/interviews/interview-5.html">
+                  <div class="related-thumbnail">
+                    
+                      <img src="/assets/img/interview-vector-image.jpg">
+                    
+                  </div>
+                  <div class="related-title">
+                    2019.10.29 - Interview (Product Manager)
+                  </div>
+                  <!--<small>October 29, 2019</small>-->
+                </a>
+              </h3>
+            </li>
+            
+          
+        
+          
+            <li>
+              <h3>
+                <a href="/interviews/interview-4.html">
+                  <div class="related-thumbnail">
+                    
+                      <img src="/assets/img/interview-vector-image.jpg">
+                    
+                  </div>
+                  <div class="related-title">
+                    2019.10.28 - Interview (Junior Server Developer)
+                  </div>
+                  <!--<small>October 28, 2019</small>-->
+                </a>
+              </h3>
+            </li>
+            
+          
+        
+      
+    </ul>
+  </div>
+
+  
+    <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+
+/*
+var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://rmfls2017-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+  
+
+</div>
+
+  </div>
+  <footer class="footer">
+  
+    <a href="https://www.facebook.com/rmfls2015" class="menu-link" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  
+    <a href="mailto:rnfls2012@gmail.com" class="menu-link" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+  <div class="post-date"><a href="/">LivlyBear | a Jekyll theme for running a blog by JIWAN YE</a></div>
+</footer>
+
+</div>
+
+</body>
+</html>
