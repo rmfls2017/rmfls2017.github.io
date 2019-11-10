@@ -3,7 +3,7 @@
 */
 
 .container {
-  width: $container-width;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -17,7 +17,7 @@
   width: $container-width - 20px;
 }
 .posts-wrapper h1 {
-  margin: 20px 0px 5px;
+  margin: 20px 0px 20px;
 }
 @media (max-width: $container-width) {
   .container {
