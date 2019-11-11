@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <title>
+    
+      2019.09.30 - Interview (PHP Backend Position) | LivlyBear
+    
+  </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <!-- Use Atom -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="LivlyBear" />
+  <!-- RSS-v2.0
+  <link href="/rss-feed.xml" type="application/rss+xml" rel="alternate" title="LivlyBear | a Jekyll theme for running a blog"/>
+  //-->
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <!-- Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150064661-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-150064661-1');
+</script>
+
+
+  <!-- Google tag manager -->
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJR8MJ4');</script>
+<!-- End Google Tag Manager -->
+
+  <!-- Use Jekyll SEO plugin -->
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>2019.09.30 - Interview (PHP Backend Position) | LivlyBear</title>
+<meta name="generator" content="Jekyll v3.6.3" />
+<meta property="og:title" content="2019.09.30 - Interview (PHP Backend Position)" />
+<meta name="author" content="JIWAN YE" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="면접 진행 복기 회사 이직을 준비하는 단계에서 첫 면접으로 PHP 백엔드 개발자의 포지션에 지원하게 됨 순서 간단한 인사와 이력서 검토 -&gt; 면접 진행 총 면접시간: 1h 회사에서 진행한 프로젝트 설명 전 직장에서 사용한 기술 스택에 대하여: 사용했던 php 프레임워크에 대한 설명 php 신규 플랫폼을 개발하게 된 계기 ORM 사용 AWS 서버 구성을 해보았는가 첫 직장에서 여러가지의 언어를 경험해봤는데 그 중 python 모바일 푸시 서버를 어떻게 구현을 하였는가? React 로 페이지 구성은 어떻게 하였는가? 답변: * Symfony Framework 을 신규 프로젝트의 프레임워크로 채택하고 Composer 를 통해 라이브러리를 관리하였다. 또한 PSR 의 내용을 토대로 코드 작성을 하였다. * 기존 플랫폼에서 운영중이던 상황에서 데이터베이스의 문제가 일어나 그 부분을 수정하고 개발적인 측면에서 효율적이고 차후의 기술을 도입하기 위해 신규 플랫폼 개발을 결정함 * Symfony Framework 를 통해서 ORM 을 사용해보았다고 하였으나 실제적으로는 많은 내용을 PDO 객체를 통해서 직접적인 쿼리문을 작성하여 데이터를 조회함 * KT Cloud 를 통해서 진행하였고 Load Balancing 서비스와 CDN 서비스를 이용함 * 외부 API 툴을 이용하는 것 처럼 curl 을 이용하여 통신을 주고받음 (python 과 FCM 을 이용하여 푸시서비스 구현) * 클라이언트와 관리자 페이지를 기본으로하는 레이아웃을 2개로 나누어 제작 추가질문: 답변 중 PSR 이란 말을 했는데 이것에 대해 설명해 줄 수 있는가? 푸시 서버에 대해서 구체적으로 설명해 줄 수 있는가? 클라이언트, 관리자 페이지를 두개로 나누었다고 했는데 SPA 에 대해 개념적으로 설명할 수 있는가? (3번 질문 - SPA 에 대하여 설명으로 연결) 추가질문 답변: * PSR-0 버전을 먼저 말하고 그 다음은 코딩 스타일에 대한 가이드라인으로 답함 (deprecated 된 버전을 설명하여 여기에서 잘못답하지 않았나 생각이 듦) * PSR-0 버전은 autoloading 에 대해서 가이드해주는 형식으로 되어있는데 namespace 작성시 맨 처음 시작은 회사의 이름 및 대분류를 나타내는 키워드, 그 다음은 프로젝트 이름 및 중분류, 그 다음은 기능을 구현하는 디렉토리 및 소분류, 마지막은 클래스의 이름을 마지막으로 설정 (이때 면접관이 PSR-0 은 2014년 정도에 deprecated 되었다고 말해주었다) * 실제 디바이스 별 푸시 메세지를 보내는 소스는 python 을 통해서 구현을 했고 관리자 페이지에서 설정한 메세지 내용을 통해서 예약된 시간 혹은 즉시 보낼 수 있는 것으로 구현 * 관리자 페이지에서 한번 전송할 때 약 6,000~7,000 건 정도를 보내는데 이것을 1,000개 단위로 분리하여 푸시서버에 보내고 Response 를 받은 후에 다시 1,000개를 보내는 형식으로 구현함 * 예약 시간은 1시간 마다 조회하는 crontab 을 이용하여 구현하였고 관리자 페이지에서 액션 시 curl 을 통해서 전달 추가질문: 메세지를 보냈지만 Response 가 늦어지는 경우에는 어떻게 해야하는가? 추가질문 답변: * 1,000 개 단위를 좀 더 잘게쪼개서 한꺼번에 처리하는 양의 수를 줄인다. 100개 혹은 10개 씩 푸시서버에 보내는 단위를 줄인다 기술 스택에 대한 질문 PHP Symfony framework 에 말고 다른 프레임워크를 사용해본적 있는가? ORM 을 사용하는 이유는 무엇인가? Typescript 와 Javascript 의 특성은 무엇인가? 답변: * 개인 프로젝트로 CodeIgniter 를 사용 * 코딩을 하기에 쿼리문을 작성하는데 시간을 줄일 수 있고 코드에 좀 더 집중할 수 있게 도와주는 역할을 한다고 생각 * 큰 차이점은 함수나 어떠한 기능을 만들고 사용할 때 Typescript 에서 강제성을 띄는게 좀 더 실수를 줄일 수 있고 코드리딩을 하는데 원할하게 해주어 제일 큰 차이라고 생각함 기본적인 개념 질문 SPA에 대해서 설명 MVC 패턴에 대해서 설명 Interface 를 사용하면 어떤 점이 좋은가 답변: * single page application 으로 하나의 페이지에서 데이터의 요청이 오는 부분만 바꾸어 페이지 전체를 새롭게 로딩하는게 아닌 필요 부분만 새로고치는 방법을 말함 * Model-View-Controller 의 구조로 View 에서 action 을 취하면 Controller 로 들어가 데이터를 변경 및 조회를 함 * Interface 를 만들어 사용하게 될 경우 하나의 기능을 구현 시 공통적으로 필요한 부분을 Interface 로 분리하여 강제적으로 구현할 수 있게 만드는 특성을 가지고 있음 추가질문: MVC 패턴 말고 다른 알고있는 패턴과 설명을 할 수 있는가? 추가질문 답변: * MVVM 이라는 패턴을 알고있지만 어떻게 사용되는지는 설명못함 (이때도 한번에 말한게 아니고 기억을 더듬어 얘기를 함) 전문성 Lightsail 을 이용하면서 cpu credit 이라는 내용을 알고있는가, 확장개념으로 AWS 의 저사양 인스턴트는 모두 이러한 특징을 가지고있는데 설명을 해줄 수 있느냐 답변: * 처음에 cpu 에 따라 사용량이 부과되는 것인가 넘겨집음 (전혀 상관없는 내용을 말함) 피드백: CPU Credit 이란 어느정도 cpu 가 사용하게 되면 그 이상으로는 더 이상 사용하지 못하게 되므로 한계치를 갖게 된다는 내용 느낀점 경력직으로 이직을 위한 첫 면접이여서 어떠한 내용으로 면접을 진행하게 될 지 의문을 가지고 시작한 면접이였다. 직장에서 내가 어떤 기술을 가지고있는지 가지고있는 지식에 대해서 제대로 이해를 하고 설명을 했는지에 대한 지표가 될 수 있는 기회가 되었다. 그 결과 참담한 결과만이 있었고 내 자신이 우쭐해 있었다는 판단이 들게되었다. 직장을 다니면서 내가 이 정도는 잘하니까 이런식으로 하는거야 라는 생각이 팽배하여 직장을 다니고있었고 그 결과 이러한 일이 벌어졌다고 생각한다. 이는 너무나도 말도 안되는 생각이였다. 총평 면접 결과로는 실패. 내 자신에게도 실망한 면접이였다." />
+<meta property="og:description" content="면접 진행 복기 회사 이직을 준비하는 단계에서 첫 면접으로 PHP 백엔드 개발자의 포지션에 지원하게 됨 순서 간단한 인사와 이력서 검토 -&gt; 면접 진행 총 면접시간: 1h 회사에서 진행한 프로젝트 설명 전 직장에서 사용한 기술 스택에 대하여: 사용했던 php 프레임워크에 대한 설명 php 신규 플랫폼을 개발하게 된 계기 ORM 사용 AWS 서버 구성을 해보았는가 첫 직장에서 여러가지의 언어를 경험해봤는데 그 중 python 모바일 푸시 서버를 어떻게 구현을 하였는가? React 로 페이지 구성은 어떻게 하였는가? 답변: * Symfony Framework 을 신규 프로젝트의 프레임워크로 채택하고 Composer 를 통해 라이브러리를 관리하였다. 또한 PSR 의 내용을 토대로 코드 작성을 하였다. * 기존 플랫폼에서 운영중이던 상황에서 데이터베이스의 문제가 일어나 그 부분을 수정하고 개발적인 측면에서 효율적이고 차후의 기술을 도입하기 위해 신규 플랫폼 개발을 결정함 * Symfony Framework 를 통해서 ORM 을 사용해보았다고 하였으나 실제적으로는 많은 내용을 PDO 객체를 통해서 직접적인 쿼리문을 작성하여 데이터를 조회함 * KT Cloud 를 통해서 진행하였고 Load Balancing 서비스와 CDN 서비스를 이용함 * 외부 API 툴을 이용하는 것 처럼 curl 을 이용하여 통신을 주고받음 (python 과 FCM 을 이용하여 푸시서비스 구현) * 클라이언트와 관리자 페이지를 기본으로하는 레이아웃을 2개로 나누어 제작 추가질문: 답변 중 PSR 이란 말을 했는데 이것에 대해 설명해 줄 수 있는가? 푸시 서버에 대해서 구체적으로 설명해 줄 수 있는가? 클라이언트, 관리자 페이지를 두개로 나누었다고 했는데 SPA 에 대해 개념적으로 설명할 수 있는가? (3번 질문 - SPA 에 대하여 설명으로 연결) 추가질문 답변: * PSR-0 버전을 먼저 말하고 그 다음은 코딩 스타일에 대한 가이드라인으로 답함 (deprecated 된 버전을 설명하여 여기에서 잘못답하지 않았나 생각이 듦) * PSR-0 버전은 autoloading 에 대해서 가이드해주는 형식으로 되어있는데 namespace 작성시 맨 처음 시작은 회사의 이름 및 대분류를 나타내는 키워드, 그 다음은 프로젝트 이름 및 중분류, 그 다음은 기능을 구현하는 디렉토리 및 소분류, 마지막은 클래스의 이름을 마지막으로 설정 (이때 면접관이 PSR-0 은 2014년 정도에 deprecated 되었다고 말해주었다) * 실제 디바이스 별 푸시 메세지를 보내는 소스는 python 을 통해서 구현을 했고 관리자 페이지에서 설정한 메세지 내용을 통해서 예약된 시간 혹은 즉시 보낼 수 있는 것으로 구현 * 관리자 페이지에서 한번 전송할 때 약 6,000~7,000 건 정도를 보내는데 이것을 1,000개 단위로 분리하여 푸시서버에 보내고 Response 를 받은 후에 다시 1,000개를 보내는 형식으로 구현함 * 예약 시간은 1시간 마다 조회하는 crontab 을 이용하여 구현하였고 관리자 페이지에서 액션 시 curl 을 통해서 전달 추가질문: 메세지를 보냈지만 Response 가 늦어지는 경우에는 어떻게 해야하는가? 추가질문 답변: * 1,000 개 단위를 좀 더 잘게쪼개서 한꺼번에 처리하는 양의 수를 줄인다. 100개 혹은 10개 씩 푸시서버에 보내는 단위를 줄인다 기술 스택에 대한 질문 PHP Symfony framework 에 말고 다른 프레임워크를 사용해본적 있는가? ORM 을 사용하는 이유는 무엇인가? Typescript 와 Javascript 의 특성은 무엇인가? 답변: * 개인 프로젝트로 CodeIgniter 를 사용 * 코딩을 하기에 쿼리문을 작성하는데 시간을 줄일 수 있고 코드에 좀 더 집중할 수 있게 도와주는 역할을 한다고 생각 * 큰 차이점은 함수나 어떠한 기능을 만들고 사용할 때 Typescript 에서 강제성을 띄는게 좀 더 실수를 줄일 수 있고 코드리딩을 하는데 원할하게 해주어 제일 큰 차이라고 생각함 기본적인 개념 질문 SPA에 대해서 설명 MVC 패턴에 대해서 설명 Interface 를 사용하면 어떤 점이 좋은가 답변: * single page application 으로 하나의 페이지에서 데이터의 요청이 오는 부분만 바꾸어 페이지 전체를 새롭게 로딩하는게 아닌 필요 부분만 새로고치는 방법을 말함 * Model-View-Controller 의 구조로 View 에서 action 을 취하면 Controller 로 들어가 데이터를 변경 및 조회를 함 * Interface 를 만들어 사용하게 될 경우 하나의 기능을 구현 시 공통적으로 필요한 부분을 Interface 로 분리하여 강제적으로 구현할 수 있게 만드는 특성을 가지고 있음 추가질문: MVC 패턴 말고 다른 알고있는 패턴과 설명을 할 수 있는가? 추가질문 답변: * MVVM 이라는 패턴을 알고있지만 어떻게 사용되는지는 설명못함 (이때도 한번에 말한게 아니고 기억을 더듬어 얘기를 함) 전문성 Lightsail 을 이용하면서 cpu credit 이라는 내용을 알고있는가, 확장개념으로 AWS 의 저사양 인스턴트는 모두 이러한 특징을 가지고있는데 설명을 해줄 수 있느냐 답변: * 처음에 cpu 에 따라 사용량이 부과되는 것인가 넘겨집음 (전혀 상관없는 내용을 말함) 피드백: CPU Credit 이란 어느정도 cpu 가 사용하게 되면 그 이상으로는 더 이상 사용하지 못하게 되므로 한계치를 갖게 된다는 내용 느낀점 경력직으로 이직을 위한 첫 면접이여서 어떠한 내용으로 면접을 진행하게 될 지 의문을 가지고 시작한 면접이였다. 직장에서 내가 어떤 기술을 가지고있는지 가지고있는 지식에 대해서 제대로 이해를 하고 설명을 했는지에 대한 지표가 될 수 있는 기회가 되었다. 그 결과 참담한 결과만이 있었고 내 자신이 우쭐해 있었다는 판단이 들게되었다. 직장을 다니면서 내가 이 정도는 잘하니까 이런식으로 하는거야 라는 생각이 팽배하여 직장을 다니고있었고 그 결과 이러한 일이 벌어졌다고 생각한다. 이는 너무나도 말도 안되는 생각이였다. 총평 면접 결과로는 실패. 내 자신에게도 실망한 면접이였다." />
+<link rel="canonical" href="http://localhost:4000/interviews/interview-1.html" />
+<meta property="og:url" content="http://localhost:4000/interviews/interview-1.html" />
+<meta property="og:site_name" content="LivlyBear" />
+<meta property="og:image" content="http://localhost:4000/interview-vector-image.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-09-30T00:00:00+00:00" />
+<script type="application/ld+json">
+{"headline":"2019.09.30 - Interview (PHP Backend Position)","dateModified":"2019-09-30T00:00:00+00:00","datePublished":"2019-09-30T00:00:00+00:00","@type":"BlogPosting","image":"http://localhost:4000/interview-vector-image.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/interviews/interview-1.html"},"url":"http://localhost:4000/interviews/interview-1.html","author":{"@type":"Person","name":"JIWAN YE"},"description":"면접 진행 복기 회사 이직을 준비하는 단계에서 첫 면접으로 PHP 백엔드 개발자의 포지션에 지원하게 됨 순서 간단한 인사와 이력서 검토 -&gt; 면접 진행 총 면접시간: 1h 회사에서 진행한 프로젝트 설명 전 직장에서 사용한 기술 스택에 대하여: 사용했던 php 프레임워크에 대한 설명 php 신규 플랫폼을 개발하게 된 계기 ORM 사용 AWS 서버 구성을 해보았는가 첫 직장에서 여러가지의 언어를 경험해봤는데 그 중 python 모바일 푸시 서버를 어떻게 구현을 하였는가? React 로 페이지 구성은 어떻게 하였는가? 답변: * Symfony Framework 을 신규 프로젝트의 프레임워크로 채택하고 Composer 를 통해 라이브러리를 관리하였다. 또한 PSR 의 내용을 토대로 코드 작성을 하였다. * 기존 플랫폼에서 운영중이던 상황에서 데이터베이스의 문제가 일어나 그 부분을 수정하고 개발적인 측면에서 효율적이고 차후의 기술을 도입하기 위해 신규 플랫폼 개발을 결정함 * Symfony Framework 를 통해서 ORM 을 사용해보았다고 하였으나 실제적으로는 많은 내용을 PDO 객체를 통해서 직접적인 쿼리문을 작성하여 데이터를 조회함 * KT Cloud 를 통해서 진행하였고 Load Balancing 서비스와 CDN 서비스를 이용함 * 외부 API 툴을 이용하는 것 처럼 curl 을 이용하여 통신을 주고받음 (python 과 FCM 을 이용하여 푸시서비스 구현) * 클라이언트와 관리자 페이지를 기본으로하는 레이아웃을 2개로 나누어 제작 추가질문: 답변 중 PSR 이란 말을 했는데 이것에 대해 설명해 줄 수 있는가? 푸시 서버에 대해서 구체적으로 설명해 줄 수 있는가? 클라이언트, 관리자 페이지를 두개로 나누었다고 했는데 SPA 에 대해 개념적으로 설명할 수 있는가? (3번 질문 - SPA 에 대하여 설명으로 연결) 추가질문 답변: * PSR-0 버전을 먼저 말하고 그 다음은 코딩 스타일에 대한 가이드라인으로 답함 (deprecated 된 버전을 설명하여 여기에서 잘못답하지 않았나 생각이 듦) * PSR-0 버전은 autoloading 에 대해서 가이드해주는 형식으로 되어있는데 namespace 작성시 맨 처음 시작은 회사의 이름 및 대분류를 나타내는 키워드, 그 다음은 프로젝트 이름 및 중분류, 그 다음은 기능을 구현하는 디렉토리 및 소분류, 마지막은 클래스의 이름을 마지막으로 설정 (이때 면접관이 PSR-0 은 2014년 정도에 deprecated 되었다고 말해주었다) * 실제 디바이스 별 푸시 메세지를 보내는 소스는 python 을 통해서 구현을 했고 관리자 페이지에서 설정한 메세지 내용을 통해서 예약된 시간 혹은 즉시 보낼 수 있는 것으로 구현 * 관리자 페이지에서 한번 전송할 때 약 6,000~7,000 건 정도를 보내는데 이것을 1,000개 단위로 분리하여 푸시서버에 보내고 Response 를 받은 후에 다시 1,000개를 보내는 형식으로 구현함 * 예약 시간은 1시간 마다 조회하는 crontab 을 이용하여 구현하였고 관리자 페이지에서 액션 시 curl 을 통해서 전달 추가질문: 메세지를 보냈지만 Response 가 늦어지는 경우에는 어떻게 해야하는가? 추가질문 답변: * 1,000 개 단위를 좀 더 잘게쪼개서 한꺼번에 처리하는 양의 수를 줄인다. 100개 혹은 10개 씩 푸시서버에 보내는 단위를 줄인다 기술 스택에 대한 질문 PHP Symfony framework 에 말고 다른 프레임워크를 사용해본적 있는가? ORM 을 사용하는 이유는 무엇인가? Typescript 와 Javascript 의 특성은 무엇인가? 답변: * 개인 프로젝트로 CodeIgniter 를 사용 * 코딩을 하기에 쿼리문을 작성하는데 시간을 줄일 수 있고 코드에 좀 더 집중할 수 있게 도와주는 역할을 한다고 생각 * 큰 차이점은 함수나 어떠한 기능을 만들고 사용할 때 Typescript 에서 강제성을 띄는게 좀 더 실수를 줄일 수 있고 코드리딩을 하는데 원할하게 해주어 제일 큰 차이라고 생각함 기본적인 개념 질문 SPA에 대해서 설명 MVC 패턴에 대해서 설명 Interface 를 사용하면 어떤 점이 좋은가 답변: * single page application 으로 하나의 페이지에서 데이터의 요청이 오는 부분만 바꾸어 페이지 전체를 새롭게 로딩하는게 아닌 필요 부분만 새로고치는 방법을 말함 * Model-View-Controller 의 구조로 View 에서 action 을 취하면 Controller 로 들어가 데이터를 변경 및 조회를 함 * Interface 를 만들어 사용하게 될 경우 하나의 기능을 구현 시 공통적으로 필요한 부분을 Interface 로 분리하여 강제적으로 구현할 수 있게 만드는 특성을 가지고 있음 추가질문: MVC 패턴 말고 다른 알고있는 패턴과 설명을 할 수 있는가? 추가질문 답변: * MVVM 이라는 패턴을 알고있지만 어떻게 사용되는지는 설명못함 (이때도 한번에 말한게 아니고 기억을 더듬어 얘기를 함) 전문성 Lightsail 을 이용하면서 cpu credit 이라는 내용을 알고있는가, 확장개념으로 AWS 의 저사양 인스턴트는 모두 이러한 특징을 가지고있는데 설명을 해줄 수 있느냐 답변: * 처음에 cpu 에 따라 사용량이 부과되는 것인가 넘겨집음 (전혀 상관없는 내용을 말함) 피드백: CPU Credit 이란 어느정도 cpu 가 사용하게 되면 그 이상으로는 더 이상 사용하지 못하게 되므로 한계치를 갖게 된다는 내용 느낀점 경력직으로 이직을 위한 첫 면접이여서 어떠한 내용으로 면접을 진행하게 될 지 의문을 가지고 시작한 면접이였다. 직장에서 내가 어떤 기술을 가지고있는지 가지고있는 지식에 대해서 제대로 이해를 하고 설명을 했는지에 대한 지표가 될 수 있는 기회가 되었다. 그 결과 참담한 결과만이 있었고 내 자신이 우쭐해 있었다는 판단이 들게되었다. 직장을 다니면서 내가 이 정도는 잘하니까 이런식으로 하는거야 라는 생각이 팽배하여 직장을 다니고있었고 그 결과 이러한 일이 벌어졌다고 생각한다. 이는 너무나도 말도 안되는 생각이였다. 총평 면접 결과로는 실패. 내 자신에게도 실망한 면접이였다.","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+<body>
+
+<div class="container">
+  <header class="site-header">
+  <h3 class="site-title">
+    <a href="/">LivlyBear</a>
+  </h3>
+  <nav class="menu-list">
+    
+      <a href="/pages/interview.html" class="menu-link">Interview</a>
+    
+
+    
+      <a href="https://www.facebook.com/rmfls2015" class="menu-link" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    
+      <a href="mailto:rnfls2012@gmail.com" class="menu-link" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    
+  </nav>
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    <div class="dropdown-content">
+      
+        <a href="/pages/interview.html" class="menu-link">Interview</a>
+      
+
+      
+        <a href="https://www.facebook.com/rmfls2015" class="menu-link" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      
+        <a href="mailto:rnfls2012@gmail.com" class="menu-link" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      
+    </div>
+  </div>
+</header>
+
+  <div class="posts-wrapper">
+    <div class="page-content">
+  <h1>
+    2019.09.30 - Interview (PHP Backend Position)
+  </h1>
+
+  <span class="post-date">
+    Written on
+    
+    September
+    30th,
+    2019
+    by
+    
+      JIWAN YE
+    
+  </span>
+
+  
+    <div class="featured-image">
+      <img src="/assets/img/interview-vector-image.jpg">
+    </div>
+  
+
+  <article>
+    <h2 id="면접-진행-복기">면접 진행 복기</h2>
+
+<p>회사 이직을 준비하는 단계에서 첫 면접으로 PHP 백엔드 개발자의 포지션에 지원하게 됨</p>
+
+<h3 id="순서">순서</h3>
+
+<p>간단한 인사와 이력서 검토 -&gt; 면접 진행</p>
+
+<p>총 면접시간: <strong>1h</strong></p>
+
+<ol>
+  <li>
+    <p>회사에서 진행한 프로젝트 설명</p>
+
+    <p>전 직장에서 사용한 기술 스택에 대하여:</p>
+
+    <ul>
+      <li>
+        <p>사용했던 php 프레임워크에 대한 설명</p>
+      </li>
+      <li>
+        <p>php 신규 플랫폼을 개발하게 된 계기</p>
+      </li>
+      <li>
+        <p>ORM 사용</p>
+      </li>
+      <li>
+        <p>AWS 서버 구성을 해보았는가</p>
+      </li>
+      <li>
+        <p>첫 직장에서 여러가지의 언어를 경험해봤는데 그 중 python 모바일 푸시 서버를 어떻게 구현을 하였는가?</p>
+      </li>
+      <li>
+        <p>React 로 페이지 구성은 어떻게 하였는가?</p>
+      </li>
+    </ul>
+
+    <p>답변:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> * Symfony Framework 을 신규 프로젝트의 프레임워크로 채택하고 Composer 를 통해 라이브러리를 관리하였다. 또한 PSR 의 내용을 토대로 코드 작성을 하였다.
+
+ * 기존 플랫폼에서 운영중이던 상황에서 데이터베이스의 문제가 일어나 그 부분을 수정하고 개발적인 측면에서 효율적이고 차후의 기술을 도입하기 위해 신규 플랫폼 개발을 결정함
+
+ * Symfony Framework 를 통해서 ORM 을 사용해보았다고 하였으나 실제적으로는 많은 내용을 PDO 객체를 통해서 직접적인 쿼리문을 작성하여 데이터를 조회함
+
+ * KT Cloud 를 통해서 진행하였고 Load Balancing 서비스와 CDN 서비스를 이용함
+
+ * 외부 API 툴을 이용하는 것 처럼 curl 을 이용하여 통신을 주고받음 (python 과 FCM 을 이용하여 푸시서비스 구현)
+
+ * 클라이언트와 관리자 페이지를 기본으로하는 레이아웃을 2개로 나누어 제작
+</code></pre></div>    </div>
+
+    <p>추가질문:</p>
+
+    <ul>
+      <li>
+        <p>답변 중 PSR 이란 말을 했는데 이것에 대해 설명해 줄 수 있는가?</p>
+      </li>
+      <li>
+        <p>푸시 서버에 대해서 구체적으로 설명해 줄 수 있는가?</p>
+      </li>
+      <li>
+        <p>클라이언트, 관리자 페이지를 두개로 나누었다고 했는데 SPA 에 대해 개념적으로 설명할 수 있는가? (3번 질문 - SPA 에 대하여 설명으로 연결)</p>
+      </li>
+    </ul>
+
+    <p>추가질문 답변:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> * PSR-0 버전을 먼저 말하고 그 다음은 코딩 스타일에 대한 가이드라인으로 답함 (deprecated 된 버전을 설명하여 여기에서 잘못답하지 않았나 생각이 듦)
+
+ * PSR-0 버전은 autoloading 에 대해서 가이드해주는 형식으로 되어있는데 namespace 작성시 맨 처음 시작은 회사의 이름 및 대분류를 나타내는 키워드, 그 다음은 프로젝트 이름 및 중분류, 그 다음은 기능을 구현하는 디렉토리 및 소분류, 마지막은 클래스의 이름을 마지막으로 설정 (이때 면접관이 PSR-0 은 2014년 정도에 deprecated 되었다고 말해주었다)
+
+ * 실제 디바이스 별 푸시 메세지를 보내는 소스는 python 을 통해서 구현을 했고 관리자 페이지에서 설정한 메세지 내용을 통해서 예약된 시간 혹은 즉시 보낼 수 있는 것으로 구현
+
+ * 관리자 페이지에서 한번 전송할 때 약 6,000~7,000 건 정도를 보내는데 이것을 1,000개 단위로 분리하여 푸시서버에 보내고 Response 를 받은 후에 다시 1,000개를 보내는 형식으로 구현함
+
+ * 예약 시간은 1시간 마다 조회하는 crontab 을 이용하여 구현하였고 관리자 페이지에서 액션 시 curl 을 통해서 전달
+</code></pre></div>    </div>
+
+    <p>추가질문:</p>
+
+    <ul>
+      <li>메세지를 보냈지만 Response 가 늦어지는 경우에는 어떻게 해야하는가?</li>
+    </ul>
+
+    <p>추가질문 답변:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> * 1,000 개 단위를 좀 더 잘게쪼개서 한꺼번에 처리하는 양의 수를 줄인다. 100개 혹은 10개 씩 푸시서버에 보내는 단위를 줄인다
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>기술 스택에 대한 질문</p>
+
+    <ul>
+      <li>
+        <p>PHP Symfony framework 에 말고 다른 프레임워크를 사용해본적 있는가?</p>
+      </li>
+      <li>
+        <p>ORM 을 사용하는 이유는 무엇인가?</p>
+      </li>
+      <li>
+        <p>Typescript 와 Javascript 의 특성은 무엇인가?</p>
+      </li>
+    </ul>
+
+    <p>답변:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> * 개인 프로젝트로 CodeIgniter 를 사용
+
+ * 코딩을 하기에 쿼리문을 작성하는데 시간을 줄일 수 있고 코드에 좀 더 집중할 수 있게 도와주는 역할을 한다고 생각
+
+ * 큰 차이점은 함수나 어떠한 기능을 만들고 사용할 때 Typescript 에서 강제성을 띄는게 좀 더 실수를 줄일 수 있고 코드리딩을 하는데 원할하게 해주어 제일 큰 차이라고 생각함
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>기본적인 개념 질문</p>
+
+    <ul>
+      <li>
+        <p>SPA에 대해서 설명</p>
+      </li>
+      <li>
+        <p>MVC 패턴에 대해서 설명</p>
+      </li>
+      <li>
+        <p>Interface 를 사용하면 어떤 점이 좋은가</p>
+      </li>
+    </ul>
+
+    <p>답변:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> * single page application 으로 하나의 페이지에서 데이터의 요청이 오는 부분만 바꾸어 페이지 전체를 새롭게 로딩하는게 아닌 필요 부분만 새로고치는 방법을 말함
+
+ * Model-View-Controller 의 구조로 View 에서 action 을 취하면 Controller 로 들어가 데이터를 변경 및 조회를 함
+
+ * Interface 를 만들어 사용하게 될 경우 하나의 기능을 구현 시 공통적으로 필요한 부분을 Interface 로 분리하여 강제적으로 구현할 수 있게 만드는 특성을 가지고 있음
+</code></pre></div>    </div>
+
+    <p>추가질문:</p>
+
+    <ul>
+      <li>MVC 패턴 말고 다른 알고있는 패턴과 설명을 할 수 있는가?</li>
+    </ul>
+
+    <p>추가질문 답변:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> * MVVM 이라는 패턴을 알고있지만 어떻게 사용되는지는 설명못함 (이때도 한번에 말한게 아니고 기억을 더듬어 얘기를 함)
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>전문성</p>
+
+    <ul>
+      <li>Lightsail 을 이용하면서 cpu credit 이라는 내용을 알고있는가, 확장개념으로 AWS 의 저사양 인스턴트는 모두 이러한 특징을 가지고있는데 설명을 해줄 수 있느냐</li>
+    </ul>
+
+    <p>답변:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> * 처음에 cpu 에 따라 사용량이 부과되는 것인가 넘겨집음 (전혀 상관없는 내용을 말함)
+</code></pre></div>    </div>
+
+    <p>피드백:</p>
+
+    <p>CPU Credit 이란 어느정도 cpu 가 사용하게 되면 그 이상으로는 더 이상 사용하지 못하게 되므로 한계치를 갖게 된다는 내용</p>
+  </li>
+</ol>
+
+<h3 id="느낀점">느낀점</h3>
+
+<p>경력직으로 이직을 위한 첫 면접이여서 어떠한 내용으로 면접을 진행하게 될 지 의문을 가지고 시작한 면접이였다.</p>
+
+<p>직장에서 내가 어떤 기술을 가지고있는지 가지고있는 지식에 대해서 제대로 이해를 하고 설명을 했는지에 대한 지표가 될 수 있는 기회가 되었다.</p>
+
+<p>그 결과 참담한 결과만이 있었고 내 자신이 우쭐해 있었다는 판단이 들게되었다.</p>
+
+<p>직장을 다니면서 <code class="highlighter-rouge">내가 이 정도는 잘하니까 이런식으로 하는거야</code> 라는 생각이 팽배하여 직장을 다니고있었고 그 결과 이러한 일이 벌어졌다고 생각한다.</p>
+
+<p>이는 너무나도 말도 안되는 생각이였다.</p>
+
+<h3 id="총평">총평</h3>
+
+<p>면접 결과로는 실패. 내 자신에게도 실망한 면접이였다.</p>
+
+  </article>
+
+  <div class="post-share">
+    <div class="post-date">Feel free to share!</div>
+    <div class="sharing-icons">
+      <a href="https://twitter.com/intent/tweet?text=2019.09.30 - Interview (PHP Backend Position)&amp;url=/interviews/interview-1.html" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/interviews/interview-1.html&amp;title=2019.09.30 - Interview (PHP Backend Position)" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://plus.google.com/share?url=/interviews/interview-1.html" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <div class="related">
+    <h2>You may also enjoy...</h2>
+    
+    <ul class="related-posts">
+      
+        
+          
+            <li>
+              <h3>
+                <a href="/interviews/interview-6.html">
+                  <div class="related-thumbnail">
+                    
+                      <img src="/assets/img/interview-vector-image.jpg">
+                    
+                  </div>
+                  <div class="related-title">
+                    2019.11.04 - Interview (Junior Backend Developer Position)
+                  </div>
+                  <!--<small>November 4, 2019</small>-->
+                </a>
+              </h3>
+            </li>
+            
+          
+        
+          
+            <li>
+              <h3>
+                <a href="/interviews/interview-5.html">
+                  <div class="related-thumbnail">
+                    
+                      <img src="/assets/img/interview-vector-image.jpg">
+                    
+                  </div>
+                  <div class="related-title">
+                    2019.10.29 - Interview (Product Manager)
+                  </div>
+                  <!--<small>October 29, 2019</small>-->
+                </a>
+              </h3>
+            </li>
+            
+          
+        
+          
+            <li>
+              <h3>
+                <a href="/interviews/interview-4.html">
+                  <div class="related-thumbnail">
+                    
+                      <img src="/assets/img/interview-vector-image.jpg">
+                    
+                  </div>
+                  <div class="related-title">
+                    2019.10.28 - Interview (Junior Server Developer)
+                  </div>
+                  <!--<small>October 28, 2019</small>-->
+                </a>
+              </h3>
+            </li>
+            
+          
+        
+      
+    </ul>
+  </div>
+
+  
+    <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+
+/*
+var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://rmfls2017-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+  
+
+</div>
+
+  </div>
+  <footer class="footer">
+  
+    <a href="https://www.facebook.com/rmfls2015" class="menu-link" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  
+    <a href="mailto:rnfls2012@gmail.com" class="menu-link" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+  
+  <div class="post-date"><a href="/">LivlyBear | a Jekyll theme for running a blog by JIWAN YE</a></div>
+</footer>
+
+</div>
+
+</body>
+</html>
