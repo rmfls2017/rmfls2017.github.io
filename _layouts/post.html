@@ -44,6 +44,7 @@ layout: default
     </div>
   </div>
 
+  {% comment %} 
   <div class="related">
     <h2>{{ site.data.settings.related_posts }}</h2>
     {% assign listed_posts_urls = page.url | split: ' ' %}
@@ -72,7 +73,8 @@ layout: default
         {% endfor %}
       {% endfor %}
     </ul>
-  </div>
+  </div> 
+  {% endcomment %}
 
   {% if site.data.settings.disqus.comments %}
     {% include disqus.html %}
