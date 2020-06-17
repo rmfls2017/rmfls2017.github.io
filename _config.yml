@@ -16,7 +16,7 @@ sass:
 # Customize atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           "LivlyBear"
 description:	       "a Jekyll theme for running a blog"
-author:              "JIWAN YE"
+author:              "rmfls2017"
 
 # RSS 2.0 can be used instead of Atom by uncomment following two lines
 #feed:
