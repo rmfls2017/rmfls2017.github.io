@@ -4,7 +4,7 @@ title: "2020.06.17 - 개발 일지"
 author: "rmfls2017"
 categories: developments
 tags: [developments]
-image: developments-journal.jpg
+image: development-journal.jpg
 ---
 
 ## 블로그 포스트 정리 및 정리
