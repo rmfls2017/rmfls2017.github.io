@@ -9,12 +9,12 @@ image: knowledges.jpg
 
 1. gRPC
 
-* [Google 공식 사이트](https://www.grpc.io/)
+    * [Google 공식 사이트](https://www.grpc.io/)
 
-* [Microservices with gRPC](https://medium.com/@goinhacker/microservices-with-grpc-d504133d191d)
+    * [Microservices with gRPC](https://medium.com/@goinhacker/microservices-with-grpc-d504133d191d)
 
 2. GraphQL
 
-* [카카오 기술 블로그](https://tech.kakao.com/2019/08/01/graphql-basic/)
+    * [카카오 기술 블로그](https://tech.kakao.com/2019/08/01/graphql-basic/)
 
-* [GraphQL Advantages vs Disadvantages](https://www.robinwieruch.de/why-graphql-advantages-disadvantages-alternatives)
+    * [GraphQL Advantages vs Disadvantages](https://www.robinwieruch.de/why-graphql-advantages-disadvantages-alternatives)
