@@ -1,0 +1,5 @@
+# robotstxt.org
+
+User-agent: *
+Allow:/
+Sitemap: https://rmfls2017.github.io/sitemap.xml
