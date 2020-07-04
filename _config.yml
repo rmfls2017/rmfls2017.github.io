@@ -1,23 +1,23 @@
 # Site Build Settings
 
 # jekyll-paginate configuration
-paginate:            5
+paginate: 5
 
 # Build settings
-markdown:            kramdown
-highlighter:         rouge
-permalink:           none
-plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+markdown: kramdown
+highlighter: rouge
+permalink: none
+plugins: [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 sass:
-  sass_dir: assets/css
-  style: :nested
+    sass_dir: assets/css
+    style: :nested
 
 # Customize atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           "경험을 통해 세상을 넓게보기"
-description:	       "예술적인 개발자를 향해"
-author:              "rmfls2017"
-
+title: "개발을 통해 세상을 넓게보기"
+description: "예술적인 개발자를 향해"
+author: "rmfls2017"
+logo: /assets/img/345.jpg
 # RSS 2.0 can be used instead of Atom by uncomment following two lines
 #feed:
 #  path: rss-feed.xml
