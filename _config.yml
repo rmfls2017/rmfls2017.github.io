@@ -14,10 +14,10 @@ sass:
     style: :nested
 
 # Customize atom feed settings (this is where Jekyll-Feed gets configuration information)
-title: "개발을 통해 세상을 넓게보기"
+title: "넓게보기 연습"
 description: "예술적인 개발자를 향해"
 author: "rmfls2017"
-logo: /assets/img/345.jpg
+
 # RSS 2.0 can be used instead of Atom by uncomment following two lines
 #feed:
 #  path: rss-feed.xml
