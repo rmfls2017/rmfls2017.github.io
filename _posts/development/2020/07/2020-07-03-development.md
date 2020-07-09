@@ -7,6 +7,8 @@ tags: [developments, docker, python, docker-compose]
 image: development-journal.jpg
 ---
 
+# 도커 삽질기
+
 과제로 주어졌던 프로젝트에서 docker 에 대해서 좀 더 공부하기로 하고 계속해서 진행
 
 dockerfile 과 compose 를 이용하여 service 와 db 를 연결하기 위해서 공부 및 삽질을 시작했다.
