@@ -13,7 +13,7 @@ image: development-journal.jpg
 
 ## 이전 작성글
 
-* [도커 삽질기 1탄](./2020-07-03-development.md)
+-   [도커 삽질기 1탄](./development-5.md)
 
 ## 삽질 스타트
 
@@ -27,7 +27,7 @@ image: development-journal.jpg
 
 해당 패키지는 c, c++ 개발에 필요한 패키지이지만 python 을 개발하면서 필요하기 때문이다. 그 이유는 다음의 글을 확인하자.
 
-> To successfully install C extension packages like lxml from source into a virtual environment, you also need the necessary build tools like gcc or clang. 
+> To successfully install C extension packages like lxml from source into a virtual environment, you also need the necessary build tools like gcc or clang.
 
 c 기반으로 개발되어 있는 패키지를 가상환경에서 실행하기 위해서는 build-essential 의 도구가 필요하기 때문에 설치해야한다는 내용이다. (왜 python 에 c, c++ 를 빌드하는 패키지가 필요한지에 대해 묻는다면 [링크](https://softwareengineering.stackexchange.com/questions/20988/why-is-python-written-in-c-and-not-in-c) 를 확인하길 바란다.)
 
@@ -39,7 +39,7 @@ $ rm -rf /var/lib/apt/lists/*
 
 위의 경로에는 apt-get 을 사용하여 설치한 패키지들이 저장되는 곳으로 이미 설치가 끝난 상태에서 다운로드 파일을 계속해서 들고 있을 필요는 없으므로 제거해준다.
 
-이 때 *RUN* 명령어가 실행될 때 이전에 말했던 것 처럼 한 줄, 한 줄 실행이 되는데 하나의 패키지를 하나의 *RUN* 명령어로 처리하게 된다면 이미지가 하나 하나 쌓여 최종적인 이미지의 크기가 늘어나기 때문에 필요한 패키지를 하나의 RUN 명령어로 실행한다. (docker layer 와 관련된 내용)
+이 때 _RUN_ 명령어가 실행될 때 이전에 말했던 것 처럼 한 줄, 한 줄 실행이 되는데 하나의 패키지를 하나의 _RUN_ 명령어로 처리하게 된다면 이미지가 하나 하나 쌓여 최종적인 이미지의 크기가 늘어나기 때문에 필요한 패키지를 하나의 RUN 명령어로 실행한다. (docker layer 와 관련된 내용)
 
 docker image 의 layer 가 어떻게 동작하는지 설명하는 것은 이 글의 방향과 맞지 않으므로 공부하기에 좋은 블로그 글을 하나 첨부하겠다. (http://cloudrain21.com/examination-of-docker-containersize-ufs)
 
@@ -73,7 +73,7 @@ RUN apt-get update \
 
 ## Reference
 
-* https://askubuntu.com/questions/179955/var-lib-apt-lists-is-huge
-* https://softwareengineering.stackexchange.com/questions/20988/why-is-python-written-in-c-and-not-in-c
-* https://www.44bits.io/ko/post/how-docker-image-work
-* http://cloudrain21.com/examination-of-docker-containersize-ufs
+-   https://askubuntu.com/questions/179955/var-lib-apt-lists-is-huge
+-   https://softwareengineering.stackexchange.com/questions/20988/why-is-python-written-in-c-and-not-in-c
+-   https://www.44bits.io/ko/post/how-docker-image-work
+-   http://cloudrain21.com/examination-of-docker-containersize-ufs
