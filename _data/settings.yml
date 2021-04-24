@@ -7,13 +7,14 @@ disqus:
 google-ID: "UA-150064661-1"
 
 menu:
-    - { name: "Development", folder: "pages", file: "development.html" }
+    - { name: "About", folder: "pages", file: "about.html" }
+    # - { name: "Development", folder: "pages", file: "development.html" }
     # - {name: 'Study', folder: 'pages', file: 'study.html'}
-    - { name: "Interview", folder: "pages", file: "interview.html" }
+    # - { name: "Interview", folder: "pages", file: "interview.html" }
     # - {name: 'Playground', folder: 'pages', file: 'playground.html'}
-    - { name: "Knowledge", folder: "pages", file: "knowledge.html" }
+    # - { name: "Knowledge", folder: "pages", file: "knowledge.html" }
     # - {name: 'About', folder: 'pages', file: 'about.html'}
-    - { name: "Memories", folder: "pages", file: "memories.html" }
+    # - { name: "Memories", folder: "pages", file: "memories.html" }
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
