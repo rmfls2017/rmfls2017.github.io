@@ -2,12 +2,14 @@ code,
 pre {
   font-family: $code-font-family
 }
+
 code {
   padding: .25em .5em;
   font-size: .8rem;
   background-color: #f5f5f5;
   border-radius: 3px;
 }
+
 pre {
   display: block;
   margin-top: 0;
@@ -21,6 +23,7 @@ pre {
   word-wrap: break-word;
   background-color: #f5f5f5;
 }
+
 pre code {
   padding: 0;
   font-size: 100%;
@@ -33,6 +36,7 @@ pre code {
   margin-bottom: 1rem;
   border-radius: 4px;
 }
+
 .highlight pre {
   margin-bottom: 0;
 }
@@ -41,17 +45,21 @@ pre code {
 .gist .gist-file {
   font-family: $code-font-family !important;
 }
+
 .gist .markdown-body {
   padding: 15px;
 }
+
 .gist pre {
   padding: 0;
   background-color: transparent;
 }
+
 .gist .gist-file .gist-data {
   font-size: .8rem !important;
   line-height: 1.4;
 }
+
 .gist code {
   padding: 0;
   color: inherit;

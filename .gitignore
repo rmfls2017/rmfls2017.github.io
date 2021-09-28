@@ -63,3 +63,5 @@ typings/
 .sass-cache
 
 _site
+
+vendor

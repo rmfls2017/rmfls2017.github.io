@@ -7,20 +7,19 @@ disqus:
 google-ID: "UA-150064661-1"
 
 menu:
-    - { name: "About", folder: "pages", file: "about.html" }
-    # - { name: "Development", folder: "pages", file: "development.html" }
-    # - {name: 'Study', folder: 'pages', file: 'study.html'}
-    # - { name: "Interview", folder: "pages", file: "interview.html" }
-    # - {name: 'Playground', folder: 'pages', file: 'playground.html'}
-    # - { name: "Knowledge", folder: "pages", file: "knowledge.html" }
-    # - {name: 'About', folder: 'pages', file: 'about.html'}
-    # - { name: "Memories", folder: "pages", file: "memories.html" }
+  - {name: 'Development', folder: 'pages', file: 'development.html'}
+  # - {name: 'Study', folder: 'pages', file: 'study.html'}
+  - {name: 'Interview', folder: 'pages', file: 'interview.html'}
+  # - {name: 'Playground', folder: 'pages', file: 'playground.html'}
+  - {name: 'Knowledge', folder: 'pages', file: 'knowledge.html'}
+  # - {name: 'About', folder: 'pages', file: 'about.html'}
+  - {name: 'Memoris', folder: 'pages', file: 'memoris.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
-    - { icon: "github", link: "https://github.com/rmfls2017" }
-    - { icon: "facebook", link: "https://www.facebook.com/rmfls2015" }
-    - { icon: "envelope", link: "mailto:rnfls2012@gmail.com" }
+  - {icon: 'github', link: 'https://github.com/rmfls2017'}
+  - {icon: 'facebook', link: 'https://www.facebook.com/rmfls2015'}
+  - {icon: 'envelope', link: 'mailto:rnfls2012@gmail.com'}
 
 # Customize site text
 pagination:

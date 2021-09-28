@@ -6,11 +6,13 @@
   line-height: 45px;
   width: inherit;
 }
+
 .footer a {
   color: $brand-color;
   padding: 0px 10px 0px;
   text-decoration: none;
 }
+
 @media (max-width: $container-width) {
   .footer {
     background: white;
