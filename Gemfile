@@ -30,4 +30,4 @@ gem 'jekyll-seo-tag'
 
 gem "webrick", "~> 1.7"
 
-gem "kramdown", "~> 1.17"
+gem "kramdown", "~> 2.3"
